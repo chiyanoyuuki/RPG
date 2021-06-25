@@ -1,0 +1,40 @@
+[
+    {
+        "x":1,
+        "y":1,
+        "nom":"Brindhibou",
+        "niveau":1,
+        "pdvmax":8,
+        "pdv":8,
+        "etat":"Bonne santé",
+        "resistance":1,
+        "puissance":1,
+        "agilite":1,
+        "intelligence":1,
+        "style":1,
+        "sort1":"Messager du Crépuscule",
+        "sort2":"Communication Animale (Faible)",
+        "sort3":"",
+        "sort4":"",
+        "sort5":""
+    },
+    {
+        "x":1,
+        "y":1,
+        "nom":"Croc Blanc",
+        "niveau":1,
+        "pdvmax":12,
+        "pdv":12,
+        "etat":"Bonne santé",
+        "resistance":1,
+        "puissance":1,
+        "agilite":1,
+        "intelligence":1,
+        "style":1,
+        "sort1":"Coup de Croc",
+        "sort2":"Coup de Patte",
+        "sort3":"Sprint",
+        "sort4":"",
+        "sort5":""
+    }
+]
