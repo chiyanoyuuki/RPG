@@ -1,0 +1,58 @@
+[
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat":800,
+        "ycombat":1,
+        "nom": "Gontrand",
+        "image":"Gontrand",
+        "etat":"",
+        "niveau": 3,
+        "pdvmax": 26,
+        "pdv": 26,
+        "manamax": 18,
+        "mana": 18
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat":800,
+        "ycombat":1,
+        "nom": "Soldat",
+        "image":"Soldat",
+        "etat":"",
+        "niveau": 1,
+        "pdvmax": 10,
+        "pdv": 10,
+        "manamax": 8,
+        "mana": 8
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat":800,
+        "ycombat":1,
+        "nom": "Archer",
+        "image":"Archer",
+        "etat":"",
+        "niveau": 1,
+        "pdvmax": 6,
+        "pdv": 6,
+        "manamax": 8,
+        "mana": 8
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat":800,
+        "ycombat":1,
+        "nom": "Chef",
+        "image":"Chef",
+        "etat":"",
+        "niveau": 2,
+        "pdvmax": 18,
+        "pdv": 18,
+        "manamax": 12,
+        "mana": 12
+    }
+]
