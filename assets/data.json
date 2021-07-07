@@ -1,20 +1,26 @@
 {
     "personnages": [
         {
-            "x": 1036,
-            "y": 726,
+            "x": 616,
+            "y": 1120,
             "xcombat": 857,
             "ycombat": 823,
             "nom": "Luna Stormwood",
             "histoire": "Origaire d'une grande famille d'alchimiste de la forêt d'aubelune au sud-est D'Albion dont le père est décédé et la mère à soudainement disparu il y plusieurs semaines. Luna se met donc en quête de retrouver sa mère, elle apprend que sa mère est parti vers le nord dans les montage pour étudier des phonèmes climatique étrange. Elle se met donc en route pour les montagnes, arrivée à l'endroit où la végétation a subis des changements inexplicable, Luna commence à s'interroger, après plusieurs jours de recherche, elle surprend une conversation avec un mercenaire et un homme qui vie dans les montagnes, ces deux personnes parlent d'une grosse pierre précieuse que le roi Herald recherche, après quelques instants, grâce aux recherches qu'elles a effectués ces jours précédents, elle commence à comprendre de quoi il s'agit et décide d'aller à la rencontre de ces deux hommes..",
             "classe": "sorciere",
             "image": "sorciere",
+            "team": true,
             "niveau": 1,
             "pdvmax": 10,
-            "pdv": 6,
+            "pdv": 9,
             "manamax": 20,
-            "mana": 12,
+            "mana": 18,
             "etat": "Bonne Santé",
+            "formes": [
+                "Humain"
+            ],
+            "forme": "Humain",
+            "actif": true,
             "stats": [
                 {
                     "nom": "Endurance",
@@ -54,7 +60,7 @@
                 ""
             ],
             "familier": "Brindhibou",
-            "argent": 7,
+            "argent": 5,
             "inventaire": [
                 {
                     "nom": "Herbes",
@@ -139,20 +145,27 @@
             ]
         },
         {
-            "x": 1184,
-            "y": 576,
+            "x": 915,
+            "y": 1220,
             "xcombat": 769,
             "ycombat": 704,
             "nom": "Bjorn Côtes de Fer",
             "histoire": "Trapeur origaire des montagnes enneigées du nord D'Albion, Bjorn a vécu toute sa vie dans les montagnes, il vie de la chasse, de la pêche et de la vente de fourrure, il est accompagné depuis de nombreuses années par un loup blanc qu'il a recueilli bébé après qu'il ait malheureusement du tuer se mère pour survivre. Un jour où il était à la chasse, une tempête de neige se leva et forca Bjorn à se réfugier dans une grotte non loin de là. Cros blanc, le loup de Bjorn commenca à s'agiter après quelques instants, puis se mit à courir vers le fond de la grotte, Bjorn le suivi, les parois de la grotte commençaient à changer, les parois étaient devenues comme du cristal, Bjorn vi Croc blanc auprès d'une étrange grosse pierre bleu. Bjorn décida de la ramèner chez lui et de la cacher en pensant que cette pierre pourrait être précieuse. Après quelques temps, Bjorn remarqua des changements troublants sur la flore autour de chez lui et commenca à s'interroger, le lendemain il reçu la visite d'un mercenaire de renom à la recherche d'une pierre précieuse pour le Roi Herarld..",
             "classe": "trappeur",
             "image": "trappeur",
+            "team": true,
             "niveau": 1,
             "pdvmax": 18,
-            "pdv": 15,
+            "pdv": 18,
             "manamax": 8,
-            "mana": 8,
-            "etat": "Cheville douloureuse",
+            "mana": 6,
+            "etat": "Bonne santé",
+            "formes": [
+                "Humain",
+                "Loup Sinistre"
+            ],
+            "forme": "Humain",
+            "actif": true,
             "stats": [
                 {
                     "nom": "Endurance",
@@ -192,7 +205,7 @@
                 ""
             ],
             "familier": "Croc Blanc",
-            "argent": 20,
+            "argent": 18,
             "inventaire": [
                 {
                     "nom": "Pièges",
@@ -208,15 +221,15 @@
                 },
                 {
                     "nom": "Bandages",
-                    "qte": 3
+                    "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Parchemin non traduit",
+                    "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Dague en Acier",
+                    "qte": 1
                 },
                 {
                     "nom": "",
@@ -277,20 +290,26 @@
             ]
         },
         {
-            "x": 1238,
-            "y": 649,
+            "x": 815,
+            "y": 1117,
             "xcombat": 921,
             "ycombat": 706,
             "nom": "Gandalf le Roux",
             "histoire": "Craint dans des terres encore inconnues des plus vieilles cartes de ce monde, Gandalf le Roux est un mercrenaire fier, aux methodes douteuses mais aux résultats rigoureux. Bien qu'il n'ait aucune facilité à sympathiser ou même à cototer le moindre individu, sa réputation lui a permis d'établir une certaines renommée qui lui tiens à coeur. Né d'un père vagabond et d'une mère ivrogne, et enfant unique, Gandalf a toujours du compter sur la force de ses poings fermes pour se faire respecter. Aujourd'hui, il a été engagé par le roi pour une mission discrète de la plus haute importance. Ramener un etrange caillou à sa majesté sans poser trop de questions. Bien qu'il ne soit pas très sociable, Gandalf est rusé, et a vite compris qu'un mercenaire malin et potentiellement infidèle rapporterait plus qu'un bon toutou",
             "classe": "mercenaire",
             "image": "mercenaire",
-            "niveau": 1,
-            "pdvmax": 22,
-            "pdv": 6,
-            "manamax": 6,
-            "mana": 1,
-            "etat": "PLS",
+            "team": true,
+            "niveau": 2,
+            "pdvmax": 28,
+            "pdv": 28,
+            "manamax": 10,
+            "mana": 10,
+            "etat": "Bonne Santé",
+            "formes": [
+                "Humain"
+            ],
+            "forme": "Humain",
+            "actif": true,
             "stats": [
                 {
                     "nom": "Endurance",
@@ -310,7 +329,7 @@
                 },
                 {
                     "nom": "Charisme",
-                    "qte": 4
+                    "qte": 7
                 }
             ],
             "arme1": "Epée à deux mains",
@@ -349,12 +368,12 @@
                     "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Coupon participation tournoi",
+                    "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Contrat traque assassins",
+                    "qte": 1
                 },
                 {
                     "nom": "",
@@ -415,20 +434,26 @@
             ]
         },
         {
-            "x": 1048,
-            "y": 655,
+            "x": 867,
+            "y": 1233,
             "xcombat": 663,
             "ycombat": 581,
             "nom": "Arlequin",
             "histoire": "Un saltimbanque étrange dont personne ne sait rien..",
             "classe": "assassin",
             "image": "assassin",
+            "team": true,
             "niveau": 1,
             "pdvmax": 14,
             "pdv": 14,
             "manamax": 10,
-            "mana": 10,
+            "mana": 8,
             "etat": "Bonne Santé",
+            "formes": [
+                "Humain"
+            ],
+            "forme": "Humain",
+            "actif": true,
             "stats": [
                 {
                     "nom": "Endurance",
@@ -551,16 +576,163 @@
                     "qte": 0
                 }
             ]
+        },
+        {
+            "x": 511,
+            "y": 1220,
+            "xcombat": 500,
+            "ycombat": 1,
+            "nom": "Sienna",
+            "histoire": "Depuis son plus jeune age, Sienna a parcouru la forêt de XXX jusqu'à en reconnaitre les moindres changement dans la faune et la flore. Jeune druidesse elfe de 107 ans, elle a été formée aux arcanes de la magie de métamorphose par l'archimage Louge dans la plus grande discression. Les autres races ignores beaucoup de chose sur la vie des elfes après tout. Sienna s'est mis en tete de parcourir le monde au coté de son fidèle compagnon, Pipou l'écureuil. Elle a un but précis : trouver un remède pour guérir sa famille rongé par un maux qu'aucun elfe n'a encore vu auparavant.",
+            "classe": "druide",
+            "image": "Sienna",
+            "team": true,
+            "niveau": 1,
+            "pdvmax": 12,
+            "pdv": 12,
+            "manamax": 14,
+            "mana": 12,
+            "etat": "Bonne Santé",
+            "formes": [
+                "Humain",
+                "Aigle",
+                "Ours"
+            ],
+            "forme": "Humain",
+            "actif": true,
+            "stats": [
+                {
+                    "nom": "Endurance",
+                    "qte": 7
+                },
+                {
+                    "nom": "Force",
+                    "qte": 5
+                },
+                {
+                    "nom": "Dextérité",
+                    "qte": 5
+                },
+                {
+                    "nom": "Intelligence",
+                    "qte": 10
+                },
+                {
+                    "nom": "Charisme",
+                    "qte": 7
+                }
+            ],
+            "arme1": "Bâton",
+            "arme2": "",
+            "sorts": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "stuff": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "familier": "Pipou",
+            "argent": 48,
+            "inventaire": [
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                },
+                {
+                    "nom": "",
+                    "qte": 0
+                }
+            ]
         }
     ],
     "familiers": [
         {
-            "x": 980,
-            "y": 620,
+            "x": 544,
+            "y": 1095,
             "xcombat": 539,
             "ycombat": 511,
             "nom": "Brindhibou",
             "image": "Brindhibou",
+            "team": true,
             "niveau": 1,
             "pdvmax": 8,
             "pdv": 8,
@@ -576,20 +748,22 @@
             "sort2": "Communication Animale (Faible)",
             "sort3": "",
             "sort4": "",
-            "sort5": ""
+            "sort5": "",
+            "actif": true
         },
         {
-            "x": 1121,
-            "y": 755,
+            "x": 731,
+            "y": 1115,
             "xcombat": 660,
             "ycombat": 775,
             "nom": "Croc Blanc",
             "image": "Croc Blanc",
+            "team": true,
             "niveau": 1,
             "pdvmax": 12,
-            "pdv": 11,
+            "pdv": 12,
             "manamax": 8,
-            "mana": 8,
+            "mana": 6,
             "etat": "Bonne santé",
             "resistance": 1,
             "puissance": 1,
@@ -600,20 +774,22 @@
             "sort2": "Coup de Patte",
             "sort3": "Sprint",
             "sort4": "",
-            "sort5": ""
+            "sort5": "",
+            "actif": true
         },
         {
-            "x": 993,
-            "y": 712,
+            "x": 587,
+            "y": 1252,
             "xcombat": 1034,
             "ycombat": 775,
             "nom": "Lucky",
             "image": "Lucky",
+            "team": true,
             "niveau": 1,
             "pdvmax": 16,
             "pdv": 16,
             "manamax": 4,
-            "mana": 4,
+            "mana": 2,
             "etat": "Bonne santé",
             "resistance": 1,
             "puissance": 1,
@@ -624,20 +800,22 @@
             "sort2": "",
             "sort3": "",
             "sort4": "",
-            "sort5": ""
+            "sort5": "",
+            "actif": true
         },
         {
-            "x": 1109,
-            "y": 654,
+            "x": 909,
+            "y": 1140,
             "xcombat": 551,
             "ycombat": 647,
             "nom": "Gen",
             "image": "Gen",
+            "team": true,
             "niveau": 1,
             "pdvmax": 8,
-            "pdv": 4,
+            "pdv": 7,
             "manamax": 10,
-            "mana": 10,
+            "mana": 8,
             "etat": "Bonne santé",
             "resistance": 1,
             "puissance": 1,
@@ -648,9 +826,84 @@
             "sort2": "Camouflage",
             "sort3": "",
             "sort4": "",
-            "sort5": ""
+            "sort5": "",
+            "actif": true
+        },
+        {
+            "x": 583,
+            "y": 1165,
+            "xcombat": 500,
+            "ycombat": 1,
+            "nom": "Pipou",
+            "image": "Pipou",
+            "team": true,
+            "niveau": 1,
+            "pdvmax": 6,
+            "pdv": 6,
+            "manamax": 12,
+            "mana": 10,
+            "etat": "Bonne santé",
+            "resistance": 1,
+            "puissance": 1,
+            "agilite": 1,
+            "intelligence": 1,
+            "style": 1,
+            "sort1": "",
+            "sort2": "",
+            "sort3": "",
+            "sort4": "",
+            "sort5": "",
+            "actif": true
         }
     ],
     "amisActuels": [],
-    "ennemisActuels": []
+    "ennemisActuels": [],
+    "quetes": {
+        "principales":[
+            {
+                "nom":"Un oeuf de dragon ?",
+                "description":"Une mysterieuse pierre s'est averée être en réalité un oeuf de dragon. Sûrement le dernier sur terre. Bjorn l'a trouvé lors d'une tempête et l'a protégé à l'interieur d'un piège extrêmement élaboré que personne ne pourra trouver. Vous ne savez pas encore quoi faire de cet oeuf",
+                "etat":"L'oeuf est caché proche de la maison de Bjorn",
+                "etape":1
+            },
+            {
+                "nom":"Une mère disparue",
+                "description":"La mère de Luna Stormwood à disparu de son domicile en laissant sa fille derrière elle. Notre équipe à essayé de la trouver dans un camp de mercenaires sur la montagne du nord sans succès. La seule piste trouvée était une adresse à Fjorh mais cela nous a menés dans un guet-apans. Sam Bells l'assassin nous a obligé à effectuer une mission de traque vers la ville de Dusk. Nous avons décidé de suivre Kayn Proks qui nous a proposé de rouler Sam en élaborant un nouveau plan. Nous sommes désormais en route pour le tounroi de Dusk.",
+                "etat":"Nous suivons le plan de Kayn à l'arène de Dusk",
+                "etape":3
+            },
+            {
+                "nom":"Frère en cavale",
+                "description":"Le frère jumeau de Gandalf est un dangeureux criminel recherché. Notre mercenaire aimerait le retrouver pour peut-être le remettre dans le droit chemin. Mais où peut-il bien être ?",
+                "etat":"Aucune information sur le frère",
+                "etape":1
+            },
+            {
+                "nom":"Un remède à tous les maux",
+                "description":"La famille de Sienna est touchée par une étrange maladie qui semble incurable. La druidesse est partie depuis déjà fort longtemps à la recherche d'une solution pour sauver ses proches mais encore sans succès hélas. Une dépêche à la bibliothèque de Fjorh nous à indiqué que la faune des îles aux abords de Haul serait particulièrement étrange, peut-être une piste d'un éventuel remède ?",
+                "etat":"Partir pour Haul afin d'enquêter sur la faune étrange de ses îles.",
+                "etape":2
+            }
+        ],
+        "secondaires":[
+            {
+                "nom":"Un tournoi à Dusk",
+                "description":"Gontrand nous a parlé d'un tournoi qui se déroulerait à Dusk et qui nous permettrait de remporter gros.",
+                "etat":"Aller à Dusk pour participer au tournoi",
+                "etape":1
+            },
+            {
+                "nom":"Le parchemin ancien",
+                "description":"Un des corps de l'embuscade avait sur lui un parchemin écrit en une langue inconnue. Bjorn à en sa possession le dessin du visage d'un homme qui saurait apparemment déchiffrer ce langage.",
+                "etat":"Chercher l'homme sur le dessin",
+                "etape":2
+            },
+            {
+                "nom":"Contrat : Sam Bells",
+                "description":"On recherche un assassin et ses hommes. Il répond au nom de Sam Bells et oeuvre dans les alentours de notre ville de Fjorh. Les hommes sont à rendre morts ou vifs à la taverne de la ville. La récompense sera plus grande si on les ramène en vie.",
+                "etat":"Remplir le contrat",
+                "etape":1
+            }
+        ]
+    }
 }

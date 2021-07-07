@@ -1,5 +1,142 @@
 [
-    "Foret",
-    "CampDeBandits",
-    "Plage"
+    {
+        "nom": "Boutique Arlequin",
+        "image": "ShopAll",
+        "x": 1175,
+        "y": 530,
+        "finx": 50,
+        "finy": 50,
+        "inside": []
+    },
+    {
+        "nom": "Foret du Nord-Ouest",
+        "image": "Foret",
+        "x": 269.5,
+        "y": 313.9,
+        "finx": 292,
+        "finy": 148,
+        "inside": []
+    },
+    {
+        "nom": "Foret à l'Est de Fjorh",
+        "image": "Foret",
+        "x": 1100,
+        "y": 640,
+        "finx": 150,
+        "finy": 120,
+        "inside": []
+    },
+    {
+        "nom": "Camp de bandits",
+        "image": "CampDeBandits",
+        "x": 1200,
+        "y": 212.9,
+        "finx": 100,
+        "finy": 100,
+        "inside": []
+    },
+    {
+        "nom": "Plage",
+        "image": "Plage",
+        "x": 165,
+        "y": 505,
+        "finx": 100,
+        "finy": 100,
+        "inside": []
+    },
+    {
+        "nom": "Ghrain",
+        "image": "Ghrain",
+        "x": 1450,
+        "y": 500,
+        "finx": 208,
+        "finy": 175,
+        "inside": []
+    },
+    {
+        "nom": "Fjorh",
+        "image": "Fjorh",
+        "x": 658.5,
+        "y": 668,
+        "finx": 377,
+        "finy": 254,
+        "inside": [
+            {
+                "nom": "Taverne",
+                "image": "Taverne",
+                "x": 500,
+                "y": 400,
+                "finx": 208,
+                "finy": 130,
+                "inside": [
+                    {
+                        "nom": "Sortir",
+                        "image": "retour:Fjorh",
+                        "x": 50,
+                        "y": 15,
+                        "finx": 250,
+                        "finy": 200,
+                        "inside": []
+                    }
+                ]
+            },
+            {
+                "nom": "Boutique d'armurier",
+                "image": "ShopArmor",
+                "x": 620,
+                "y": 180,
+                "finx": 208,
+                "finy": 130,
+                "inside": []
+            },
+            {
+                "nom": "Fort",
+                "image": "Fort",
+                "x": 122,
+                "y": 92,
+                "finx": 212,
+                "finy": 116,
+                "inside": [
+                    {
+                        "nom": "Retourner en ville",
+                        "image": "retour:Fjorh",
+                        "x": 62,
+                        "y": 170,
+                        "finx": 63,
+                        "finy": 190,
+                        "inside": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "nom": "Dusk",
+        "image": "Dusk",
+        "x": 648.5,
+        "y": 1238,
+        "finx": 210,
+        "finy": 120,
+        "inside": [
+            {
+                "nom": "Arene",
+                "image": "Arene",
+                "x": 710,
+                "y": 460,
+                "finx": 747,
+                "finy": 204,
+                "inside": [
+                    {
+                        "nom": "Sortir",
+                        "image": "retour:Dusk",
+                        "x": 50,
+                        "y": 415,
+                        "finx": 150,
+                        "finy": 116,
+                        "inside": []
+                    }
+                ]
+            }
+        ]
+    }
 ]
