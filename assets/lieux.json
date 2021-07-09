@@ -134,8 +134,35 @@
                         "finx": 150,
                         "finy": 116,
                         "inside": []
+                    },
+                    {
+                        "nom": "Arbre du Tournoi",
+                        "image": "TOURNOI",
+                        "x": 550,
+                        "y": 5,
+                        "finx": 550,
+                        "finy": 50,
+                        "inside": []
                     }
                 ]
+            },
+            {
+                "nom": "Taverne",
+                "image": "Taverne3",
+                "x": 460,
+                "y": 808,
+                "finx": 340,
+                "finy": 145,
+                "inside": []
+            },
+            {
+                "nom": "Forgeron",
+                "image": "ShopArmor2",
+                "x": 1304,
+                "y": 690,
+                "finx": 300,
+                "finy": 160,
+                "inside": []
             }
         ]
     }
