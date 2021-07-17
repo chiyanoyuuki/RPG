@@ -13,7 +13,8 @@
         "pdv": 26,
         "manamax": 18,
         "mana": 18,
-        "tournoi": true
+        "tournoi": true,
+        "id":"gontrand"
     },
     {
         "x": 800,
@@ -29,7 +30,8 @@
         "pdv": 10,
         "manamax": 8,
         "mana": 8,
-        "tournoi": false
+        "tournoi": false,
+        "id":"soldat_1"
     },
     {
         "x": 800,
@@ -45,7 +47,8 @@
         "pdv": 16,
         "manamax": 10,
         "mana": 10,
-        "tournoi": false
+        "tournoi": false,
+        "id":"soldat_2"
     },
     {
         "x": 800,
@@ -61,7 +64,8 @@
         "pdv": 20,
         "manamax": 10,
         "mana": 10,
-        "tournoi": false
+        "tournoi": false,
+        "id":"soldat_3"
     },
     {
         "x": 800,
@@ -77,7 +81,8 @@
         "pdv": 24,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"soldat_4"
     },
     {
         "x": 800,
@@ -93,7 +98,8 @@
         "pdv": 6,
         "manamax": 8,
         "mana": 8,
-        "tournoi": false
+        "tournoi": false,
+        "id":"archer_1"
     },
     {
         "x": 800,
@@ -109,7 +115,8 @@
         "pdv": 12,
         "manamax": 10,
         "mana": 10,
-        "tournoi": false
+        "tournoi": false,
+        "id":"archer_2"
     },
     {
         "x": 800,
@@ -125,7 +132,8 @@
         "pdv": 16,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"archer_3"
     },
     {
         "x": 800,
@@ -141,7 +149,8 @@
         "pdv": 20,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"archer_4"
     },
     {
         "x": 800,
@@ -157,7 +166,8 @@
         "pdv": 14,
         "manamax": 8,
         "mana": 8,
-        "tournoi": false
+        "tournoi": false,
+        "id":"chef_1"
     },
     {
         "x": 800,
@@ -173,7 +183,8 @@
         "pdv": 18,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"chef_2"
     },
     {
         "x": 800,
@@ -189,7 +200,8 @@
         "pdv": 26,
         "manamax": 16,
         "mana": 16,
-        "tournoi": false
+        "tournoi": false,
+        "id":"chef_3"
     },
     {
         "x": 800,
@@ -205,7 +217,8 @@
         "pdv": 32,
         "manamax": 20,
         "mana": 20,
-        "tournoi": false
+        "tournoi": false,
+        "id":"chef_4"
     },
     {
         "x": 800,
@@ -221,7 +234,8 @@
         "pdv": 25,
         "manamax": 20,
         "mana": 20,
-        "tournoi": false
+        "tournoi": false,
+        "id":"donalbert"
     },
     {
         "x": 800,
@@ -237,7 +251,8 @@
         "pdv": 14,
         "manamax": 8,
         "mana": 8,
-        "tournoi": false
+        "tournoi": false,
+        "id":"stigius"
     },
     {
         "x": 800,
@@ -253,7 +268,8 @@
         "pdv": 64,
         "manamax": 42,
         "mana": 42,
-        "tournoi": false
+        "tournoi": false,
+        "id":"kaynproks"
     },
     {
         "x": 800,
@@ -269,7 +285,8 @@
         "pdv": 22,
         "manamax": 18,
         "mana": 18,
-        "tournoi": false
+        "tournoi": false,
+        "id":"sambells"
     },
     {
         "x": 800,
@@ -285,7 +302,8 @@
         "pdv": 10,
         "manamax": 6,
         "mana": 6,
-        "tournoi": false
+        "tournoi": false,
+        "id":"assassin_1"
     },
     {
         "x": 800,
@@ -301,7 +319,8 @@
         "pdv": 16,
         "manamax": 8,
         "mana": 8,
-        "tournoi": false
+        "tournoi": false,
+        "id":"assassin_2"
     },
     {
         "x": 800,
@@ -317,7 +336,8 @@
         "pdv": 20,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"assassin_3"
     },
     {
         "x": 800,
@@ -333,7 +353,8 @@
         "pdv": 24,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"assassin_4"
     },
     {
         "x": 800,
@@ -349,7 +370,8 @@
         "pdv": 42,
         "manamax": 18,
         "mana": 18,
-        "tournoi": false
+        "tournoi": false,
+        "id":"borisgosom"
     },
     {
         "x": 800,
@@ -365,7 +387,8 @@
         "pdv": 34,
         "manamax": 162,
         "mana": 162,
-        "tournoi": false
+        "tournoi": false,
+        "id":"albusdemitrescu"
     },
     {
         "x": 800,
@@ -381,7 +404,8 @@
         "pdv": 18,
         "manamax": 12,
         "mana": 12,
-        "tournoi": true
+        "tournoi": true,
+        "id":"ergonproller"
     },
     {
         "x": 800,
@@ -397,7 +421,8 @@
         "pdv": 30,
         "manamax": 14,
         "mana": 14,
-        "tournoi": true
+        "tournoi": true,
+        "id":"gerongranduc"
     },
     {
         "x": 800,
@@ -413,7 +438,8 @@
         "pdv": 32,
         "manamax": 16,
         "mana": 16,
-        "tournoi": true
+        "tournoi": true,
+        "id":"fredericpulse"
     },
     {
         "x": 800,
@@ -429,7 +455,8 @@
         "pdv": 20,
         "manamax": 6,
         "mana": 6,
-        "tournoi": true
+        "tournoi": true,
+        "id":"sophiaberande"
     },
     {
         "x": 800,
@@ -445,7 +472,8 @@
         "pdv": 28,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"vladsams"
     },
     {
         "x": 800,
@@ -461,7 +489,8 @@
         "pdv": 20,
         "manamax": 2,
         "mana": 2,
-        "tournoi": true
+        "tournoi": true,
+        "id":"hankpok"
     },
     {
         "x": 800,
@@ -477,7 +506,8 @@
         "pdv": 26,
         "manamax": 7,
         "mana": 7,
-        "tournoi": true
+        "tournoi": true,
+        "id":"klaskdrurf"
     },
     {
         "x": 800,
@@ -493,7 +523,8 @@
         "pdv": 52,
         "manamax": 30,
         "mana": 30,
-        "tournoi": false
+        "tournoi": false,
+        "id":"boromirleroux"
     },
     {
         "x": 800,
@@ -509,7 +540,8 @@
         "pdv": 28,
         "manamax": 6,
         "mana": 6,
-        "tournoi": false
+        "tournoi": false,
+        "id":"urfbrant"
     },
     {
         "x": 800,
@@ -525,7 +557,8 @@
         "pdv": 12,
         "manamax": 30,
         "mana": 30,
-        "tournoi": false
+        "tournoi": false,
+        "id":"siviusbregon"
     },
     {
         "x": 800,
@@ -541,7 +574,8 @@
         "pdv": 25,
         "manamax": 12,
         "mana": 12,
-        "tournoi": true
+        "tournoi": true,
+        "id":"eziogariga"
     },
     {
         "x": 800,
@@ -557,7 +591,8 @@
         "pdv": 48,
         "manamax": 26,
         "mana": 26,
-        "tournoi": false
+        "tournoi": false,
+        "id":"philippepertovos"
     },
     {
         "x": 800,
@@ -573,7 +608,8 @@
         "pdv": 32,
         "manamax": 24,
         "mana": 24,
-        "tournoi": true
+        "tournoi": true,
+        "id":"gonzagpierdu"
     },
     {
         "x": 800,
@@ -589,7 +625,8 @@
         "pdv": 18,
         "manamax": 14,
         "mana": 14,
-        "tournoi": true
+        "tournoi": true,
+        "id":"silviaperonus"
     },
     {
         "x": 800,
@@ -605,7 +642,8 @@
         "pdv": 16,
         "manamax": 16,
         "mana": 16,
-        "tournoi": true
+        "tournoi": true,
+        "id":"arthemiskemp"
     },
     {
         "x": 800,
@@ -621,7 +659,8 @@
         "pdv": 24,
         "manamax": 16,
         "mana": 16,
-        "tournoi": true
+        "tournoi": true,
+        "id":"luciabellongi"
     },
     {
         "x": 800,
@@ -637,7 +676,8 @@
         "pdv": 16,
         "manamax": 8,
         "mana": 8,
-        "tournoi": true
+        "tournoi": true,
+        "id":"perusvondirul"
     },
     {
         "x": 800,
@@ -653,7 +693,8 @@
         "pdv": 22,
         "manamax": 12,
         "mana": 12,
-        "tournoi": true
+        "tournoi": true,
+        "id":"kyenolympus"
     },
     {
         "x": 800,
@@ -669,7 +710,8 @@
         "pdv": 20,
         "manamax": 15,
         "mana": 15,
-        "tournoi": true
+        "tournoi": true,
+        "id":"olgadurst"
     },
     {
         "x": 800,
@@ -685,7 +727,8 @@
         "pdv": 30,
         "manamax": 0,
         "mana": 0,
-        "tournoi": false
+        "tournoi": false,
+        "id":"pravusgoridon"
     },
     {
         "x": 800,
@@ -701,7 +744,8 @@
         "pdv": 20,
         "manamax": 10,
         "mana": 10,
-        "tournoi": false
+        "tournoi": false,
+        "id":"forusargo"
     },
     {
         "x": 800,
@@ -717,7 +761,8 @@
         "pdv": 25,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"boregonalv"
     },
     {
         "x": 800,
@@ -733,7 +778,8 @@
         "pdv": 31,
         "manamax": 10,
         "mana": 10,
-        "tournoi": false
+        "tournoi": false,
+        "id":"egorproust"
     },
     {
         "x": 800,
@@ -749,7 +795,8 @@
         "pdv": 60,
         "manamax": 0,
         "mana": 0,
-        "tournoi": true
+        "tournoi": true,
+        "id":"norbertsonn"
     },
     {
         "x": 800,
@@ -765,6 +812,364 @@
         "pdv": 26,
         "manamax": 12,
         "mana": 12,
-        "tournoi": false
+        "tournoi": false,
+        "id":"viegakoriss"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Erika Monark",
+        "image": "Erika Monark",
+        "solo": true,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 34,
+        "pdv": 34,
+        "manamax": 26,
+        "mana": 26,
+        "tournoi": false,
+        "id":"erikamonark"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Erigo Leanfl",
+        "image": "Erigo Leanfl",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 30,
+        "pdv": 30,
+        "manamax": 10,
+        "mana": 10,
+        "tournoi": false,
+        "id":"erigoleanfl"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Zoro Fargo",
+        "image": "Zoro Fargo",
+        "solo": true,
+        "etat": "",
+        "niveau": 6,
+        "pdvmax": 75,
+        "pdv": 75,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"zorofargo"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Arthur Jenon",
+        "image": "Arthur Jenon",
+        "solo": true,
+        "etat": "",
+        "niveau": 5,
+        "pdvmax": 50,
+        "pdv": 50,
+        "manamax": 22,
+        "mana": 22,
+        "tournoi": false,
+        "id":"arthurjenon"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Goliath de Percerelle",
+        "image": "Goliath de Percerelle",
+        "solo": true,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 55,
+        "pdv": 55,
+        "manamax": 18,
+        "mana": 18,
+        "tournoi": false,
+        "id":"goliathdepercerelle"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Igor Rotru",
+        "image": "Igor Rotru",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 30,
+        "pdv": 30,
+        "manamax": 15,
+        "mana": 15,
+        "tournoi": false,
+        "id":"igorrotru"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Isaac Acari",
+        "image": "Isaac Acari",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 32,
+        "pdv": 32,
+        "manamax": 16,
+        "mana": 16,
+        "tournoi": false,
+        "id":"isaacacari"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Eziron Proval",
+        "image": "Eziron Proval",
+        "solo": true,
+        "etat": "",
+        "niveau": 6,
+        "pdvmax": 52,
+        "pdv": 52,
+        "manamax": 31,
+        "mana": 31,
+        "tournoi": false,
+        "id":"ezironproval"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Benoit Fort",
+        "image": "Benoit Fort",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 28,
+        "pdv": 28,
+        "manamax": 28,
+        "mana": 28,
+        "tournoi": false,
+        "id":"benoitfort"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Bedine Kaki",
+        "image": "Bedine Kaki",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 26,
+        "pdv": 26,
+        "manamax": 17,
+        "mana": 17,
+        "tournoi": false,
+        "id":"bedinekaki"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Roturi Darpez",
+        "image": "Roturi Darpez",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 24,
+        "pdv": 24,
+        "manamax": 17,
+        "mana": 17,
+        "tournoi": false,
+        "id":"roturidarpez"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Joshua Tronc",
+        "image": "Joshua Tronc",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 32,
+        "pdv": 32,
+        "manamax": 17,
+        "mana": 17,
+        "tournoi": false,
+        "id":"joshuatronc"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Voleur",
+        "image": "Voleur",
+        "solo": false,
+        "etat": "",
+        "niveau": 1,
+        "pdvmax": 8,
+        "pdv": 8,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"voleur_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Voleur",
+        "image": "Voleur",
+        "solo": false,
+        "etat": "",
+        "niveau": 2,
+        "pdvmax": 12,
+        "pdv": 12,
+        "manamax": 16,
+        "mana": 16,
+        "tournoi": false,
+        "id":"voleur_2"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Voleur",
+        "image": "Voleur",
+        "solo": false,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 14,
+        "pdv": 14,
+        "manamax": 20,
+        "mana": 20,
+        "tournoi": false,
+        "id":"voleur_3"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Voleur",
+        "image": "Voleur",
+        "solo": false,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 18,
+        "pdv": 18,
+        "manamax": 26,
+        "mana": 26,
+        "tournoi": false,
+        "id":"voleur_4"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Jamel Kerrus En",
+        "image": "Jamel Kerrus En",
+        "solo": true,
+        "etat": "",
+        "niveau": 6,
+        "pdvmax": 50,
+        "pdv": 50,
+        "manamax": 22,
+        "mana": 22,
+        "tournoi": false,
+        "id":"jamelkerrusen"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Hector Novus",
+        "image": "Hector Novus",
+        "solo": true,
+        "etat": "",
+        "niveau": 8,
+        "pdvmax": 102,
+        "pdv": 102,
+        "manamax": 0,
+        "mana": 0,
+        "tournoi": false,
+        "id":"hectornovus"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Homme en armure",
+        "image": "Homme en armure",
+        "solo": true,
+        "etat": "",
+        "niveau": 9,
+        "pdvmax": 162,
+        "pdv": 162,
+        "manamax": 112,
+        "mana": 112,
+        "tournoi": false,
+        "id":"hommeenarmure"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Angus Alfronde",
+        "image": "Angus Alfronde",
+        "solo": true,
+        "etat": "",
+        "niveau": 7,
+        "pdvmax": 55,
+        "pdv": 55,
+        "manamax": 26,
+        "mana": 26,
+        "tournoi": false,
+        "id":"angusalfronde"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Legolas Malhombre",
+        "image": "Legolas Malhombre",
+        "solo": true,
+        "etat": "",
+        "niveau": 9,
+        "pdvmax": 124,
+        "pdv": 124,
+        "manamax": 68,
+        "mana": 68,
+        "tournoi": false,
+        "id":"legolasmalhombre"
     }
 ]

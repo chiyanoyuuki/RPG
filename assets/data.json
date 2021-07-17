@@ -1,10 +1,10 @@
 {
     "personnages": [
         {
-            "x": 630,
-            "y": 1131,
-            "xcombat": 509,
-            "ycombat": 550,
+            "x": 757,
+            "y": 998,
+            "xcombat": 328,
+            "ycombat": 812,
             "nom": "Luna Stormwood",
             "histoire": "Origaire d'une grande famille d'alchimiste de la forêt d'aubelune au sud-est D'Albion dont le père est décédé et la mère à soudainement disparu il y plusieurs semaines. Luna se met donc en quête de retrouver sa mère, elle apprend que sa mère est parti vers le nord dans les montage pour étudier des phonèmes climatique étrange. Elle se met donc en route pour les montagnes, arrivée à l'endroit où la végétation a subis des changements inexplicable, Luna commence à s'interroger, après plusieurs jours de recherche, elle surprend une conversation avec un mercenaire et un homme qui vie dans les montagnes, ces deux personnes parlent d'une grosse pierre précieuse que le roi Herald recherche, après quelques instants, grâce aux recherches qu'elles a effectués ces jours précédents, elle commence à comprendre de quoi il s'agit et décide d'aller à la rencontre de ces deux hommes..",
             "classe": "sorciere",
@@ -12,9 +12,9 @@
             "team": true,
             "niveau": 2,
             "pdvmax": 14,
-            "pdv": 14,
+            "pdv": 5,
             "manamax": 26,
-            "mana": 26,
+            "mana": 16,
             "etat": "Bonne Santé",
             "formes": [
                 "Humain"
@@ -28,7 +28,7 @@
                 },
                 {
                     "nom": "Force",
-                    "qte": 5
+                    "qte": 6
                 },
                 {
                     "nom": "Dextérité",
@@ -145,10 +145,10 @@
             ]
         },
         {
-            "x": 915,
-            "y": 1220,
-            "xcombat": 904,
-            "ycombat": 539,
+            "x": 976,
+            "y": 1052,
+            "xcombat": 494,
+            "ycombat": 819,
             "nom": "Bjorn Côtes de Fer",
             "histoire": "Trapeur origaire des montagnes enneigées du nord D'Albion, Bjorn a vécu toute sa vie dans les montagnes, il vie de la chasse, de la pêche et de la vente de fourrure, il est accompagné depuis de nombreuses années par un loup blanc qu'il a recueilli bébé après qu'il ait malheureusement du tuer se mère pour survivre. Un jour où il était à la chasse, une tempête de neige se leva et forca Bjorn à se réfugier dans une grotte non loin de là. Cros blanc, le loup de Bjorn commenca à s'agiter après quelques instants, puis se mit à courir vers le fond de la grotte, Bjorn le suivi, les parois de la grotte commençaient à changer, les parois étaient devenues comme du cristal, Bjorn vi Croc blanc auprès d'une étrange grosse pierre bleu. Bjorn décida de la ramèner chez lui et de la cacher en pensant que cette pierre pourrait être précieuse. Après quelques temps, Bjorn remarqua des changements troublants sur la flore autour de chez lui et commenca à s'interroger, le lendemain il reçu la visite d'un mercenaire de renom à la recherche d'une pierre précieuse pour le Roi Herarld..",
             "classe": "trappeur",
@@ -158,7 +158,7 @@
             "pdvmax": 24,
             "pdv": 24,
             "manamax": 12,
-            "mana": 12,
+            "mana": 1,
             "etat": "Bonne santé",
             "formes": [
                 "Humain",
@@ -205,7 +205,7 @@
                 ""
             ],
             "familier": "Croc Blanc",
-            "argent": 18,
+            "argent": 537,
             "inventaire": [
                 {
                     "nom": "Pièges",
@@ -213,7 +213,7 @@
                 },
                 {
                     "nom": "Flèches",
-                    "qte": 13
+                    "qte": 40
                 },
                 {
                     "nom": "Objets de jet",
@@ -236,20 +236,20 @@
                     "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Carquois Renforcé (50)",
+                    "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Flèches de métal",
+                    "qte": 10
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Epée d'argent",
+                    "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Arc de grande qualité",
+                    "qte": 1
                 },
                 {
                     "nom": "",
@@ -290,10 +290,10 @@
             ]
         },
         {
-            "x": 815,
-            "y": 1117,
-            "xcombat": 1091,
-            "ycombat": 449,
+            "x": 909,
+            "y": 948,
+            "xcombat": 662,
+            "ycombat": 816,
             "nom": "Gandalf le Roux",
             "histoire": "Craint dans des terres encore inconnues des plus vieilles cartes de ce monde, Gandalf le Roux est un mercrenaire fier, aux methodes douteuses mais aux résultats rigoureux. Bien qu'il n'ait aucune facilité à sympathiser ou même à cototer le moindre individu, sa réputation lui a permis d'établir une certaines renommée qui lui tiens à coeur. Né d'un père vagabond et d'une mère ivrogne, et enfant unique, Gandalf a toujours du compter sur la force de ses poings fermes pour se faire respecter. Aujourd'hui, il a été engagé par le roi pour une mission discrète de la plus haute importance. Ramener un etrange caillou à sa majesté sans poser trop de questions. Bien qu'il ne soit pas très sociable, Gandalf est rusé, et a vite compris qu'un mercenaire malin et potentiellement infidèle rapporterait plus qu'un bon toutou",
             "classe": "mercenaire",
@@ -301,7 +301,7 @@
             "team": true,
             "niveau": 2,
             "pdvmax": 28,
-            "pdv": 28,
+            "pdv": 17,
             "manamax": 10,
             "mana": 10,
             "etat": "Bonne Santé",
@@ -321,7 +321,7 @@
                 },
                 {
                     "nom": "Dextérité",
-                    "qte": 5
+                    "qte": 6
                 },
                 {
                     "nom": "Intelligence",
@@ -349,7 +349,7 @@
                 ""
             ],
             "familier": "Lucky",
-            "argent": 109,
+            "argent": 89,
             "inventaire": [
                 {
                     "nom": "Saphir étrange",
@@ -376,16 +376,16 @@
                     "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Pièges élaborés",
+                    "qte": 1
                 },
                 {
                     "nom": "",
                     "qte": 0
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Epée d'argent",
+                    "qte": 1
                 },
                 {
                     "nom": "",
@@ -434,20 +434,20 @@
             ]
         },
         {
-            "x": 867,
-            "y": 1233,
-            "xcombat": 716,
-            "ycombat": 602,
+            "x": 913,
+            "y": 1027,
+            "xcombat": 829,
+            "ycombat": 829,
             "nom": "Arlequin",
             "histoire": "Arlequin vient de l'île de Sagüt au Sud-Ouest de Albion. Son île fut complètement détruite en quelques instants lorsqu'il n'avait que 10 ans. Il vagabonda ensuite en volant des provisions aux quatres coins du monde pour survivre. Il fît la connaissance d'un mâitre sabreur avec qui il apprit le maniement des lames pendant quelques années. Il obtint le magnifique Katana de son maître lorsqu'il décéda de vieillesse. Après cela, il rencontra un groupe d'aventuriers avec qui il passa quelques années. Un beau jour, ils se retrouvérent dans une embuscade et sans explication, Arlequin fût vendu aux assassins en échange de la vie du reste du groupe. Arlequin dût assassiner des centaines de personnes sur les ordres des assassins les années qui suivèrent. Il réussit à se débarasser de la totalité de ses ravisseurs avant de retourner vagabonder seul, désormais plus renfermé que jamais et ayant plus de difficulté à participer à des combats qu'il jugerait inutiles.",
             "classe": "assassin",
             "image": "assassin",
             "team": true,
-            "niveau": 1,
-            "pdvmax": 14,
-            "pdv": 14,
-            "manamax": 10,
-            "mana": 10,
+            "niveau": 2,
+            "pdvmax": 18,
+            "pdv": 18,
+            "manamax": 12,
+            "mana": 12,
             "etat": "Bonne Santé",
             "formes": [
                 "Humain"
@@ -461,11 +461,11 @@
                 },
                 {
                     "nom": "Force",
-                    "qte": 3
+                    "qte": 5
                 },
                 {
                     "nom": "Dextérité",
-                    "qte": 9
+                    "qte": 12
                 },
                 {
                     "nom": "Intelligence",
@@ -508,12 +508,12 @@
                     "qte": 2
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Armure renforcée en cuir (Usée)",
+                    "qte": 1
                 },
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Sanada Yukimura",
+                    "qte": 1
                 },
                 {
                     "nom": "",
@@ -578,10 +578,10 @@
             ]
         },
         {
-            "x": 511,
-            "y": 1220,
-            "xcombat": 348,
-            "ycombat": 476,
+            "x": 687,
+            "y": 1028,
+            "xcombat": 1003,
+            "ycombat": 828,
             "nom": "Sienna",
             "histoire": "Depuis son plus jeune age, Sienna a parcouru la forêt de XXX jusqu'à en reconnaitre les moindres changement dans la faune et la flore. Jeune druidesse elfe de 107 ans, elle a été formée aux arcanes de la magie de métamorphose par l'archimage Louge dans la plus grande discression. Les autres races ignores beaucoup de chose sur la vie des elfes après tout. Sienna s'est mis en tete de parcourir le monde au coté de son fidèle compagnon, Pipou l'écureuil. Elle a un but précis : trouver un remède pour guérir sa famille rongé par un maux qu'aucun elfe n'a encore vu auparavant.",
             "classe": "druide",
@@ -589,9 +589,9 @@
             "team": true,
             "niveau": 2,
             "pdvmax": 18,
-            "pdv": 18,
+            "pdv": 12,
             "manamax": 20,
-            "mana": 20,
+            "mana": 13,
             "etat": "Bonne Santé",
             "formes": [
                 "Humain",
@@ -639,11 +639,11 @@
                 ""
             ],
             "familier": "Pipou",
-            "argent": 48,
+            "argent": 33,
             "inventaire": [
                 {
-                    "nom": "",
-                    "qte": 0
+                    "nom": "Objets de jet en métal",
+                    "qte": 1
                 },
                 {
                     "nom": "",
@@ -726,10 +726,10 @@
     ],
     "familiers": [
         {
-            "x": 493,
-            "y": 1106,
-            "xcombat": 405,
-            "ycombat": 640,
+            "x": 703,
+            "y": 1342,
+            "xcombat": -111,
+            "ycombat": 581,
             "nom": "Brindhibou",
             "image": "Brindhibou",
             "team": true,
@@ -752,10 +752,10 @@
             "actif": true
         },
         {
-            "x": 731,
-            "y": 1115,
-            "xcombat": 1019,
-            "ycombat": 628,
+            "x": 756,
+            "y": 1168,
+            "xcombat": -107,
+            "ycombat": 705,
             "nom": "Croc Blanc",
             "image": "Croc Blanc",
             "team": true,
@@ -778,10 +778,10 @@
             "actif": true
         },
         {
-            "x": 587,
-            "y": 1252,
-            "xcombat": 1207,
-            "ycombat": 540,
+            "x": 622,
+            "y": 1327,
+            "xcombat": -107,
+            "ycombat": 825,
             "nom": "Lucky",
             "image": "Lucky",
             "team": true,
@@ -789,7 +789,7 @@
             "pdvmax": 16,
             "pdv": 16,
             "manamax": 4,
-            "mana": 2,
+            "mana": 4,
             "etat": "Bonne santé",
             "resistance": 1,
             "puissance": 1,
@@ -804,16 +804,16 @@
             "actif": true
         },
         {
-            "x": 909,
-            "y": 1140,
-            "xcombat": 610,
-            "ycombat": 691,
+            "x": 806,
+            "y": 1346,
+            "xcombat": -107,
+            "ycombat": 945,
             "nom": "Gen",
             "image": "Gen",
             "team": true,
             "niveau": 1,
             "pdvmax": 8,
-            "pdv": 7,
+            "pdv": 8,
             "manamax": 10,
             "mana": 10,
             "etat": "Bonne santé",
@@ -830,10 +830,10 @@
             "actif": true
         },
         {
-            "x": 583,
-            "y": 1165,
-            "xcombat": 240,
-            "ycombat": 565,
+            "x": 599,
+            "y": 1176,
+            "xcombat": -107,
+            "ycombat": 1065,
             "nom": "Pipou",
             "image": "Pipou",
             "team": true,
@@ -841,7 +841,7 @@
             "pdvmax": 6,
             "pdv": 6,
             "manamax": 12,
-            "mana": 10,
+            "mana": 12,
             "etat": "Bonne santé",
             "resistance": 1,
             "puissance": 1,
@@ -856,133 +856,83 @@
             "actif": true
         }
     ],
-    "amisActuels": [],
-    "ennemisActuels": [
+    "amisActuels": [
         {
-            "x": 800,
-            "y": 1,
-            "xcombat": 1496,
-            "ycombat": 764,
-            "nom": "Assassin 1",
-            "image": "assassins",
-            "solo": false,
-            "etat": "",
-            "niveau": 4,
-            "pdvmax": 24,
-            "pdv": 24,
-            "manamax": 12,
-            "mana": 12,
-            "tournoi": false,
-            "team": false
-        },
-        {
-            "x": 800,
-            "y": 1,
-            "xcombat": 55,
-            "ycombat": 768,
-            "nom": "Assassin 2",
-            "image": "assassins",
-            "solo": false,
-            "etat": "",
-            "niveau": 4,
-            "pdvmax": 24,
-            "pdv": 24,
-            "manamax": 12,
-            "mana": 12,
-            "tournoi": false,
-            "team": false
-        },
-        {
-            "x": 800,
-            "y": 1,
-            "xcombat": 1484,
-            "ycombat": 19,
-            "nom": "Assassin 3",
-            "image": "assassins",
-            "solo": false,
-            "etat": "",
-            "niveau": 4,
-            "pdvmax": 24,
-            "pdv": 24,
-            "manamax": 12,
-            "mana": 12,
-            "tournoi": false,
-            "team": false
-        },
-        {
-            "x": 800,
-            "y": 1,
-            "xcombat": 74,
-            "ycombat": 10,
-            "nom": "Assassin 4",
-            "image": "assassins",
-            "solo": false,
-            "etat": "",
-            "niveau": 4,
-            "pdvmax": 24,
-            "pdv": 24,
-            "manamax": 12,
-            "mana": 12,
-            "tournoi": false,
-            "team": false
-        },
-        {
-            "x": 800,
-            "y": 1,
-            "xcombat": 720,
-            "ycombat": 390,
-            "nom": "Sivius Bregon",
-            "image": "Sivius Bregon",
+            "x": 728,
+            "y": 940,
+            "xcombat": -112,
+            "ycombat": 1182,
+            "nom": "Sophia Berande",
+            "image": "Sophia Berande",
             "solo": true,
             "etat": "",
             "niveau": 2,
-            "pdvmax": 12,
-            "pdv": 12,
-            "manamax": 30,
-            "mana": 30,
+            "pdvmax": 20,
+            "pdv": 20,
+            "manamax": 6,
+            "mana": 6,
+            "tournoi": true,
+            "id": "sophiaberande",
+            "team": false
+        },
+        {
+            "x": 800,
+            "y": 1,
+            "xcombat": 214,
+            "ycombat": 640,
+            "nom": "Hector Novus",
+            "image": "Hector Novus",
+            "solo": true,
+            "etat": "",
+            "niveau": 8,
+            "pdvmax": 102,
+            "pdv": 8,
+            "manamax": 0,
+            "mana": 0,
             "tournoi": false,
+            "id": "hectornovus",
             "team": false
         }
     ],
     "quetesprincipales": [
         {
             "nom": "Un oeuf de dragon ?",
-            "perso":"Toute l'équipe",
+            "perso": "Toute l'équipe",
             "description": "Une mysterieuse pierre s'est averée être en réalité un oeuf de dragon. Sûrement le dernier sur terre. Bjorn l'a trouvé lors d'une tempête et l'a protégé à l'interieur d'un piège extrêmement élaboré que personne ne pourra trouver. Vous ne savez pas encore quoi faire de cet oeuf",
             "etat": "L'oeuf est caché proche de la maison de Bjorn",
             "etape": 1
         },
         {
             "nom": "Une mère disparue",
-            "perso":"Luna Stormwood",
+            "perso": "Luna Stormwood",
             "description": "La mère de Luna Stormwood à disparu de son domicile en laissant sa fille derrière elle. Notre équipe à essayé de la trouver dans un camp de mercenaires sur la montagne du nord sans succès. La seule piste trouvée était une adresse à Fjorh mais cela nous a menés dans un guet-apans. Sam Bells l'assassin nous a obligé à effectuer une mission de traque vers la ville de Dusk. Nous avons décidé de suivre Kayn Proks qui nous a proposé de rouler Sam en élaborant un nouveau plan. Nous avons paricipé au tounroi mais ne savons toujours pas qui est la cible.",
-            "etat": "Trouver la cible",
-            "etape": 3
+            "etat": "Soutenir Kayn lors du raid",
+            "etape": 4
         },
         {
             "nom": "Frère en cavale",
-            "perso":"Gandalf le Roux",
+            "perso": "Gandalf le Roux",
             "description": "Le frère jumeau de Gandalf est un dangeureux criminel recherché. Notre mercenaire aimerait le retrouver pour peut-être le remettre dans le droit chemin. Mais où peut-il bien être ?",
-            "etat": "Aucune information sur le frère",
-            "etape": 1
+            "etat": "Boromir est sensé se présenter lors du raid",
+            "etape": 2
         },
         {
             "nom": "Un remède à tous les maux",
-            "perso":"Sienna Hurlevent",
+            "perso": "Sienna Hurlevent",
             "description": "La famille de Sienna est touchée par une étrange maladie qui semble incurable. La druidesse est partie depuis déjà fort longtemps à la recherche d'une solution pour sauver ses proches mais encore sans succès hélas. Une dépêche à la bibliothèque de Fjorh nous à indiqué que la faune des îles aux abords de Haul serait particulièrement étrange, peut-être une piste d'un éventuel remède ?",
             "etat": "Partir pour Haul pour enquêter sur la faune étrange des îles.",
             "etape": 2
         },
         {
             "nom": "Un juste retour des choses",
-            "perso":"Arlequin",
+            "perso": "Arlequin",
             "description": "Après s'être fait trahir par ses compagnons de voyage, Arlequin souhaiterait les retrouver pour connaître la raison de leur décision.",
             "etat": "Trouver les membres de son ancien groupe",
             "etape": 1
         },
         {
             "nom": "Protection d'une espèce rare",
-            "perso":"Bjron Côtes de Fer",
+            "perso": "Bjron Côtes de Fer",
             "description": "Bjorn à passé sa vie à prendre soin des animaux de sa montagne. Désormais, avec une espèce aussi rare qu'est le dragon dans l'oeuf sous sa maison, il n'a plus qu'un but. Protéger cet oeuf puis ce qu'il contient, au péril de sa vie.",
             "etat": "Protéger l'oeuf de dragon jusqu'à son éclosion",
             "etape": 1
@@ -996,13 +946,14 @@
             "etape": 2
         },
         {
-            "nom": "Contrat : Sam Bells",
-            "description": "On recherche un assassin et ses hommes. Il répond au nom de Sam Bells et oeuvre dans les alentours de notre ville de Fjorh. Les hommes sont à rendre morts ou vifs à la taverne de la ville. La récompense sera plus grande si on les ramène en vie.",
-            "etat": "Remplir le contrat",
+            "nom": "A la recherche du bonheur",
+            "description": "Sophia Berande recherche un homme depuis toujours, elle vous a demandé de l'aide après le tournoi de Dusk",
+            "etat": "Aider Sophia à trouver l'homme",
             "etape": 1
         }
     ],
-    "lieuActuel":{
+    "lieuActuel": {
+        "id": "arenedusk",
         "nom": "Arene",
         "image": "Arene",
         "x": 710,
@@ -1011,23 +962,478 @@
         "finy": 204,
         "inside": [
             {
+                "id": "",
                 "nom": "Sortir",
                 "image": "retour:Dusk",
                 "x": 50,
                 "y": 415,
                 "finx": 150,
                 "finy": 116,
-                "inside": []
+                "inside": [],
+                "pnjs": []
             },
             {
+                "id": "",
                 "nom": "Arbre du Tournoi",
                 "image": "TOURNOI",
                 "x": 550,
                 "y": 5,
                 "finx": 550,
                 "finy": 50,
-                "inside": []
+                "inside": [],
+                "pnjs": []
+            }
+        ],
+        "pnjs": [
+            {
+                "id": "assassin_4",
+                "y": 26,
+                "x": 95
+            },
+            {
+                "id": "assassin_4",
+                "y": 28,
+                "x": 1443
+            },
+            {
+                "id": "assassin_4",
+                "y": 762,
+                "x": 79
+            },
+            {
+                "id": "assassin_4",
+                "y": 752,
+                "x": 1469
+            },
+            {
+                "id": "siviusbregon",
+                "y": 383,
+                "x": 741
             }
         ]
-    }
+    },
+    "boutiques": [
+        {
+            "nom": "ShopAll",
+            "objets": []
+        },
+        {
+            "nom": "ShopArmor",
+            "objets": []
+        },
+        {
+            "nom": "ShopArmor2",
+            "objets": [
+                {
+                    "nom": "Carquois renforcé (50)",
+                    "qte": 0,
+                    "prix": 60
+                },
+                {
+                    "nom": "Epée d'argent",
+                    "qte": 0,
+                    "prix": 80
+                },
+                {
+                    "nom": "Flèches",
+                    "qte": 186,
+                    "prix": 1
+                },
+                {
+                    "nom": "Flèches de métal",
+                    "qte": 40,
+                    "prix": 10
+                },
+                {
+                    "nom": "Objets de jet en métal",
+                    "qte": 7,
+                    "prix": 15
+                },
+                {
+                    "nom": "Pièces d'armures en argent",
+                    "qte": 9,
+                    "prix": 50
+                },
+                {
+                    "nom": "Pièges élaborés",
+                    "qte": 4,
+                    "prix": 20
+                }
+            ]
+        }
+    ],
+    "lieux": [
+        {
+            "id": "boutiquearlequin",
+            "nom": "Boutique Arlequin",
+            "image": "ShopAll",
+            "x": 1175,
+            "y": 530,
+            "finx": 50,
+            "finy": 50,
+            "desac": true,
+            "inside": [
+                {
+                    "id": "",
+                    "nom": "Sortir",
+                    "image": "MAP",
+                    "x": 550,
+                    "y": 837,
+                    "finx": 600,
+                    "finy": 75,
+                    "desac": false,
+                    "inside": [],
+                    "pnjs": []
+                }
+            ],
+            "pnjs": [
+                {
+                    "id": "pravusgoridon",
+                    "y": 479,
+                    "x": 62
+                },
+                {
+                    "id": "albusdemitrescu",
+                    "y": 509,
+                    "x": 935
+                }
+            ]
+        },
+        {
+            "id": "campdebandits",
+            "nom": "Camp de bandits",
+            "image": "CampDeBandits",
+            "x": 1200,
+            "y": 212.9,
+            "finx": 100,
+            "finy": 100,
+            "desac": false,
+            "inside": [],
+            "pnjs": []
+        },
+        {
+            "id": "dusk",
+            "nom": "Dusk",
+            "image": "Dusk",
+            "x": 648.5,
+            "y": 1238,
+            "finx": 210,
+            "finy": 120,
+            "desac": false,
+            "inside": [
+                {
+                    "id": "arenedusk",
+                    "nom": "Arene",
+                    "image": "Arene",
+                    "x": 900,
+                    "y": 550,
+                    "finx": 150,
+                    "finy": 140,
+                    "desac": false,
+                    "inside": [
+                        {
+                            "id": "",
+                            "nom": "Sortir",
+                            "image": "retour:Dusk",
+                            "x": 50,
+                            "y": 415,
+                            "finx": 150,
+                            "finy": 116,
+                            "desac": false,
+                            "inside": [],
+                            "pnjs": []
+                        },
+                        {
+                            "id": "",
+                            "nom": "Arbre du Tournoi",
+                            "image": "TOURNOI",
+                            "x": 550,
+                            "y": 5,
+                            "finx": 550,
+                            "finy": 50,
+                            "desac": true,
+                            "inside": [],
+                            "pnjs": []
+                        }
+                    ],
+                    "pnjs": []
+                },
+                {
+                    "id": "tavernedusk",
+                    "nom": "Taverne",
+                    "image": "Taverne3",
+                    "x": 460,
+                    "y": 808,
+                    "finx": 340,
+                    "finy": 145,
+                    "desac": true,
+                    "inside": [
+                        {
+                            "id": "",
+                            "nom": "Sortir",
+                            "image": "retour:Dusk",
+                            "x": 550,
+                            "y": 865,
+                            "finx": 500,
+                            "finy": 50,
+                            "desac": false,
+                            "inside": [],
+                            "pnjs": []
+                        }
+                    ],
+                    "pnjs": [
+                        {
+                            "id": "borisgosom",
+                            "y": 502,
+                            "x": 919
+                        },
+                        {
+                            "id": "perusvondirul",
+                            "y": 654,
+                            "x": 1323
+                        }
+                    ]
+                },
+                {
+                    "id": "forgerondusk",
+                    "nom": "Forgeron",
+                    "image": "ShopArmor2",
+                    "x": 1304,
+                    "y": 690,
+                    "finx": 300,
+                    "finy": 160,
+                    "desac": true,
+                    "inside": [
+                        {
+                            "id": "",
+                            "nom": "Sortir",
+                            "image": "retour:Dusk",
+                            "x": 550,
+                            "y": 837,
+                            "finx": 600,
+                            "finy": 75,
+                            "desac": false,
+                            "inside": [],
+                            "pnjs": []
+                        }
+                    ],
+                    "pnjs": [
+                        {
+                            "id": "viegakoriss",
+                            "y": 507,
+                            "x": 1415
+                        }
+                    ]
+                }
+            ],
+            "pnjs": []
+        },
+        {
+            "id": "fjorh",
+            "nom": "Fjorh",
+            "image": "Fjorh",
+            "x": 658.5,
+            "y": 668,
+            "finx": 377,
+            "finy": 254,
+            "desac": false,
+            "inside": [
+                {
+                    "id": "tavernefjorh",
+                    "nom": "Taverne",
+                    "image": "Taverne",
+                    "x": 500,
+                    "y": 400,
+                    "finx": 208,
+                    "finy": 130,
+                    "desac": true,
+                    "inside": [
+                        {
+                            "id": "",
+                            "nom": "Sortir",
+                            "image": "retour:Fjorh",
+                            "x": 50,
+                            "y": 15,
+                            "finx": 250,
+                            "finy": 200,
+                            "desac": false,
+                            "inside": [],
+                            "pnjs": []
+                        }
+                    ],
+                    "pnjs": [
+                        {
+                            "id": "donalbert",
+                            "x": 796,
+                            "y": 306
+                        }
+                    ]
+                },
+                {
+                    "id": "armurierfjorh",
+                    "nom": "Boutique d'armurier",
+                    "image": "ShopArmor",
+                    "x": 620,
+                    "y": 180,
+                    "finx": 208,
+                    "finy": 130,
+                    "desac": true,
+                    "inside": [
+                        {
+                            "id": "",
+                            "nom": "Sortir",
+                            "image": "retour:Fjorh",
+                            "x": 550,
+                            "y": 837,
+                            "finx": 600,
+                            "finy": 75,
+                            "desac": false,
+                            "inside": [],
+                            "pnjs": []
+                        }
+                    ],
+                    "pnjs": [
+                        {
+                            "id": "joshuatronc",
+                            "x": 809,
+                            "y": 410
+                        },
+                        {
+                            "id": "goliathdepercerelle",
+                            "x": 438,
+                            "y": 500
+                        }
+                    ]
+                },
+                {
+                    "id": "fortfjorh",
+                    "nom": "Fort",
+                    "image": "Fort",
+                    "x": 122,
+                    "y": 92,
+                    "finx": 212,
+                    "finy": 116,
+                    "desac": false,
+                    "inside": [
+                        {
+                            "id": "",
+                            "nom": "Retourner en ville",
+                            "image": "retour:Fjorh",
+                            "x": 62,
+                            "y": 170,
+                            "finx": 63,
+                            "finy": 190,
+                            "desac": false,
+                            "inside": [],
+                            "pnjs": []
+                        }
+                    ],
+                    "pnjs": []
+                }
+            ],
+            "pnjs": [
+                {
+                    "id": "soldat_2",
+                    "x": 389,
+                    "y": 657
+                },
+                {
+                    "id": "soldat_2",
+                    "x": 628,
+                    "y": 771
+                },
+                {
+                    "id": "soldat_2",
+                    "x": 700,
+                    "y": 474
+                },
+                {
+                    "id": "stigius",
+                    "x": 1160,
+                    "y": 474
+                },
+                {
+                    "id": "isaacacari",
+                    "x": 991,
+                    "y": 486
+                },
+                {
+                    "id": "philippepertovos",
+                    "x": 840,
+                    "y": 406
+                }
+            ]
+        },
+        {
+            "id": "foretnordouest",
+            "nom": "Foret du Nord-Ouest",
+            "image": "Foret",
+            "x": 269.5,
+            "y": 313.9,
+            "finx": 292,
+            "finy": 148,
+            "desac": false,
+            "inside": [],
+            "pnjs": []
+        },
+        {
+            "id": "foretestfjorh",
+            "nom": "Foret à l'Est de Fjorh",
+            "image": "Foret",
+            "x": 1100,
+            "y": 640,
+            "finx": 150,
+            "finy": 120,
+            "desac": false,
+            "inside": [],
+            "pnjs": []
+        },
+        {
+            "id": "ghrain",
+            "nom": "Ghrain",
+            "image": "Ghrain",
+            "x": 1450,
+            "y": 500,
+            "finx": 208,
+            "finy": 175,
+            "desac": false,
+            "inside": [],
+            "pnjs": [
+                {
+                    "id": "gontrand",
+                    "x": 1422,
+                    "y": 511
+                },
+                {
+                    "id": "boregonalv",
+                    "x": 839,
+                    "y": 504
+                }
+            ]
+        },
+        {
+            "id": "labyrinthesouterrainfjorh",
+            "nom": "Labyrinthe Souterrain",
+            "image": "LabyrintheSouterrain",
+            "x": 0,
+            "y": 0,
+            "finx": 0,
+            "finy": 0,
+            "desac": true,
+            "inside": [],
+            "pnjs": []
+        },
+        {
+            "id": "plage",
+            "nom": "Plage",
+            "image": "Plage",
+            "x": 165,
+            "y": 505,
+            "finx": 100,
+            "finy": 100,
+            "desac": false,
+            "inside": [],
+            "pnjs": []
+        }
+    ]
 }
