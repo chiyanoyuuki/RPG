@@ -1,0 +1,384 @@
+/* ============ background-color ============== */
+.clickable:hover, .reduce
+{background-color:#aaaaaa!important;}
+.fond1, .sauvegarde *:hover
+{background-color: #505050;}
+.persoListe, .histoire, .fond, .fondSansPadding, .sauvegarde *, .blocFondDG
+{background-color:#252525;}
+html, .tour, .persoSelect
+{background-color:#202020;}
+.fond0, .journal .quete .fond
+{background-color:#151515;}
+.catacombes .caseNotVisited
+{background-color:#050505;}
+.level, .caseMur
+{background-color:black;}
+.winner
+{background-color: darkgreen;}
+.plus:hover, .changeside
+{background-color: green;}
+.moins:hover, .delete, .loser, .ongletBoutique .plusRouge:hover
+{background-color: darkred;}
+.catacombes .ligne .caseVisited
+{background-color:rgba(50,50,50,0.4);}
+.ongletBoutique .widthunset img, .blocFond, .ongletBoutique .objet
+{background-color: rgba(0,0,0,0.8);}
+.catacombes
+{background-color: rgba(0,0,0,0.7);}
+.journal
+{background-color: rgba(0,0,0,0.6);}
+.lieuMap, .catacombes, .tooltip
+{background-color: rgba(0,0,0,0.5);}
+/* ============ border ============== */
+.clickable2:hover, .catacombes .ligne .caseActuelle
+{border:1px solid red;}
+.persoListe, .divPerso:hover, .personnage, .addEnnemi p, .addAmi p, .actionperso p, .lieuMap, .level
+{border:1px solid white;}
+.lieuMap
+{border:1px solid rgba(255,255,255,0.5);}
+.fond0, .histoire, .barre, .fond, .fondSansPadding, .fond1, .sauvegarde *, .tour, .blocFond, .blocFondDG, .catacombes, .tooltip
+{border: 5px ridge #101010;}
+.catacombes .case
+{border: 1px solid #505050;}
+.clickable:hover, .catacombes .ligne .caseVisited, .catacombes .ligne .caseNotVisited
+{border: 1px solid #101010;}
+/* ============ border-radius ============== */
+.persoListe, .personnage, .personnage img, .level
+{border-radius:100%;}
+/* ============ bottom ============== */
+.persocote .level
+{bottom:15px;}
+.level
+{bottom:-5px;}
+.objet .qte
+{bottom:-25px;}
+/* ============ color ============== */
+p, .sauvegarde *
+{color:white;}
+.ongletBoutique .flexjusti p, .colgold
+{color:gold;}
+.colred, .etapeNom, .ongletBoutique .map .colred
+{color:red;}
+.persoSelect
+{color:darkgreen;}
+/* ============ cursor ============== */
+.clickable:hover, .moins:hover, .plus:hover, .divPerso:hover, .clickable2, .sauvegarde *:hover
+{cursor:pointer;}
+/* ============ display ============== */
+.ligne, .botBoutique, .flexjusti, .ongletBoutique .flexBoutique, .flexdiv2, .addParticipant, .journal, .flexdiv, .ongletCombat .personnage2, .addAmi, .addEnnemi, .persocote .nom, .personnage, .contPerso, .persocote, .map, .familier .centre, .case, .inventaire, .argent, .listePersos, .menu, .sauvegarde, .dataPerso, .data, .pvmana, .pvmanabloc, .ligneTab, .tableauStats
+{display:flex;}
+/* ============ flex-wrap ============== */
+.inventaire
+{flex-wrap: wrap;}
+/* ============ font-size ============== */
+.nomGros
+{font-size:40px;}
+.listePersos .level
+{font-size:30px;}
+.etatGros, .nb, .nomMoyen, .menu p, .nomLieu, .persocote .level, .ongletCombat .megaboss .nb, .ongletCombat .megaboss .nom
+{font-size:25px;}
+.etatMoyen, .level, .ongletBoutique .flexjusti p
+{font-size:20px;}
+.persocote .nb, .divPerso .nb
+{font-size:17px;}
+.persocote .nom2
+{font-size:14px;}
+/* ============ font-style ============== */
+.level, .journal .etatMoyen
+{font-style:italic;}
+/* ============ font-weight ============== */
+.clickable:hover, .nomGros, .nb, .nomMoyen, .menu p, .persocote .nom, .nomLieu, .level, .etapeNom, .ongletBoutique .flexjusti p
+{font-weight:bold;}
+/* ============ height ============== */
+.moins, .plus, .case, .journal, .blocFondDG, .ongletBoutique .flexBoutique, .ongletBoutique
+{height:100%;}
+.blocFond
+{height:15%;}
+.tournoi .listePersos
+{height:160px;}
+.persoListe, .img150, .tour
+{height:150px;}
+.height110
+{height:110px;}
+.persocote .personnage, .tour2 .combat .persoListe, .tour2 .combat .persoListe img, .ongletBoutique .widthunset img, .ongletBoutique .objet .plus, .ongletCombat .megaboss .personnage
+{height:100px;}
+.objet .plus, .objet .moins, .tour4 .combat .persoListe, .tour4 .combat .persoListe img, .tooltip
+{height:90px;}
+.tournoi .persoListe, .tournoi .persoListe img, .tour8 .combat .persoListe, .tour8 .combat .persoListe img, .ongletCombat .boss .personnage
+{height:75px;}
+.objet
+{height:60px;}
+.textarea
+{height:55px;}
+.menu, .pvmana img, .personnage, .tour16 .combat .persoListe, .tour16 .combat .persoListe img, .ongletCombat .megaboss .pvmana img, .ongletCombat .megaboss .barre
+{height:50px;}
+.familier .pvmana img
+{height:40px;}
+.sauvegarde, .ongletCombat .boss .pvmana img, .ongletCombat .boss .barre
+{height:30px;}
+.addEnnemi p, .addAmi p, .actionperso, .catacombes .case
+{height:25px;}
+.addParticipant
+{height:20px;}
+.divPerso .pvmana img, .persocote .pvmana img, .divPerso .barre
+{height:16px;}
+.botBoutique select
+{height: min-content;}
+/* ============ justify-content ============== */
+.flexjusti, .flexdiv2, .ongletBoutique .flexBoutique, .journal, .ongletCombat .personnage2, .personnage, .contPerso, .listePersos, .sauvegarde, .dataPerso, .data, .pvmana, .inventaire, .map, .persocote .nom, .tournoi .fond0
+{justify-content:center;}
+.fond0 .listePersos
+{justify-content: unset;}
+/* ============ left ============== */
+.plus
+{left:50%;}
+.catacombes
+{left:5%;}
+.addAmi
+{left:30px;}
+.remplissage, .persocote .actionPersoAmi
+{left:0;}
+.blocGauche
+{left:-10px;}
+.objet .moins, .textarea
+{left:-15px;}
+.ongletBoutique .colgold, .ongletBoutique .objet .plus
+{left:-20px;}
+.moins2
+{left:-75px;}
+.tooltip
+{left:-230px;}
+.plus2
+{left:unset;}
+/* ============ margin ============== */
+.journal .quete
+{margin:4%;}
+.gauche, .droite, .pvmana, .journal .fond0
+{margin:3%;}
+.persoListe, .listePersos
+{margin:1%;}
+.sauvegarde
+{margin:5px;}
+body, p, .divPerso .pvmana
+{margin:0;}
+/* ============ margin-bottom ============== */
+.dataPerso
+{margin-bottom:10%;}
+.partieInventaire, .argent
+{margin-bottom:2%;}
+/* ============ margin-left ============== */
+.map
+{margin-left:10%;}
+.partieDroite
+{margin-left:1%;}
+/* ============ margin-right ============== */
+/* ============ margin-top ============== */
+.persocote .personnage
+{margin-top:3%;}
+.map
+{margin-top:2%;}
+.journal .quete .fond, .tour
+{margin-top:1%;}
+/* ============ max-height ============== */
+.histoire
+{max-height:150px;}
+/* ============ opacity ============== */
+.actionperso
+{opacity:80%;}
+.level
+{opacity: 70%;}
+.dead, .loser, .winner
+{opacity:40%;}
+.moins:hover, .plus:hover
+{opacity:20%;}
+/* ============ overflow ============== */
+.histoire, .journal .fond0
+{overflow-y:auto;}
+/* ============ padding ============== */
+.fond, .ongletBoutique .lieuMap p
+{padding:2%;}
+.journal .fond0, .journal .quete, .journal .quete .fond
+{padding:1%;}
+.objet
+{padding:15px;}
+.listePersos, .partieInventaire, .familier, .tooltip
+{padding:10px;}
+/* ============ padding-bottom ============== */
+/* ============ padding-left ============== */
+/* ============ padding-right ============== */
+/* ============ padding-top ============== */
+.tour
+{padding-top: 4%;}
+.menu p
+{padding-top:8px;}
+.addEnnemi p, .addAmi p
+{padding-top:5px;}
+.actionperso
+{padding-top:2px;}
+/* ============ position ============== */
+*
+{position:relative;}
+.tooltip, .catacombes, .ongletBoutique, .blocFondDG, .blocFond, .botBoutique, .remplissage, .nb, .moins, .plus, .qte, .textarea, .persoMap, .persocote, .divPerso, .addEnnemi, .addAmi, .actionperso, .lieuMap, .nomLieu, .level, .retour, .ongletBoutique .inventaire
+{position:absolute;}
+.journal
+{position: fixed;}
+.positionUnset
+{position: unset;}
+/* ============ resize ============== */
+textarea
+{resize:none;}
+/* ============ right ============== */
+.addEnnemi
+{right:30px;}
+.ennemi, .actionperso
+{right:0px;}
+.level
+{right:-5px;}
+.blocDroite
+{right:-10px;}
+.objet .plus
+{right:-15px;}
+.objet .qte
+{right:-20px;}
+.plus2
+{right:-75px;}
+.persocote .actionPersoAmi, .ongletBoutique .colgold
+{right:unset;}
+/* ============ text-align ============== */
+.journal .flexdiv .persoQuete
+{text-align: right;}
+p, .persocote .nom input
+{text-align: center;}
+.histoire p, .journal .flexdiv p
+{text-align: unset;}
+/* ============ text-decoration ============== */
+.clickable:hover, .nomGros, .nomMoyen, .nomLieu
+{text-decoration: underline;}
+.ongletCombat .ongletBoutique .nom
+{text-decoration: unset;}
+/* ============ top ============== */
+.nbmana, .persocote
+{top:30%;}
+.ongletCombat .boss .nb, .ongletCombat .megaboss .nb
+{top:28%;}
+.nbpv
+{top:25%;}
+.ongletBoutique .inventaire
+{top:20%;}
+.botBoutique
+{top:6%;}
+.divPerso .nb
+{top:15%;}
+.persocote .nb
+{top:10%;}
+.catacombes
+{top:5%;}
+.case button
+{top:50px;}
+.ongletBoutique .flexjusti p
+{top:10px;}
+.persoMap, .addEnnemi, .addAmi, .journal, .blocFond
+{top:0px;}
+.objet .plus, .objet .moins, .textarea
+{top:-15px;}
+.ongletBoutique .objet .plus
+{top:-20px}
+.nomLieu
+{top:-35px;}
+.retour
+{top:-65px;}
+.ongletBoutique .widthunset img
+{top:-40%;}
+/* ============ visibility ============== */
+.catacombes .caseVisible
+{visibility: unset!important;}
+.catacombes .case
+{visibility: hidden;}
+/* ============ width ============== */
+*, .familier .pvmanacont, .persocote .pvmanacont, .persocote .pvmana, .divPerso .pvmanacont, .divPerso .pvmana
+{width:100%;}
+.fondSansPadding
+{width:99%;}
+.journal .quete .fond
+{width:97%;}
+.histoire, .imgmap, .botBoutique select
+{width:95%;}
+.pvmana, .tournoi .fond0 .listePersos
+{width:92%;}
+.journal .quete
+{width:90%;}
+.map
+{width:80%;}
+.pvmanacont
+{width:70%;}
+.statsPerso, .journal .fond0, .etapeNom
+{width:60%;}
+.moins, .plus, .ongletBoutique .lieuMap, .ongletBoutique .inventaire
+{width:50%;}
+.addParticipant
+{width:40%;}
+.blocFond
+{width:35%;}
+.partieDroite, .contenu .journal .retour, .persoQuete
+{width:30%;}
+.sauvegarde p, .botBoutique
+{width:20%;}
+.sauvegarde select
+{width:10%;}
+.sauvegarde button, .ongletCombat .persoMap .megaboss
+{width:500px;}
+.blocFondDG
+{width:260px;}
+.persocote, .ongletCombat .persoMap .boss
+{width:250px;}
+.tooltip
+{width:200px;}
+.persoListe, .img150, .addEnnemi, .addAmi, .ongletCombat .divPerso
+{width:150px;}
+.ongletBoutique .objet .plus
+{width:120px;}
+.persocote .personnage, .positionUnset .persocote .actionperso select, .tour2 .combat .persoListe, .tour2 .combat .persoListe img, .ongletBoutique .widthunset img, .ongletCombat .megaboss .personnage
+{width:100px;}
+.tour4 .combat .persoListe, .tour4 .combat .persoListe img
+{width:90px;}
+.textarea
+{width:83px;}
+.ongletBoutique .objet
+{width:80px;}
+.moins2, .plus2, .tournoi .persoListe, .tournoi .persoListe img, .tour8 .combat .persoListe, .tour8 .combat .persoListe img, .ongletCombat .boss .personnage
+{width:75px;}
+.objet
+{width:60px;}
+.personnage, .addEnnemi p, .addAmi p, .tour16 .combat .persoListe, .tour16 .combat .persoListe img, .catacombes .case
+{width:50px;}
+.objet .plus, .objet .moins
+{width:45px;}
+.persocote .nom button, .actionperso, .listePersos .level
+{width:30px;}
+.persocote .level
+{width:25px;}
+.objet .qte, .level
+{width:20px;}
+.listePersos, .persoListe, .divPerso, .widthunset, .catacombes
+{width:unset;}
+/* ============ white-space ============== */
+.nomLieu
+{white-space: nowrap;}
+/* ============ z-index ============== */
+.journal
+{z-index:6;}
+.level
+{z-index:5;}
+.moins, .plus, .divPerso
+{z-index:4;}
+.nb, .actionperso
+{z-index:3;}
+.front, .lieuMap, .persocote
+{z-index:2;}
+.blocFondDG, .ongletBoutique, .catacombes
+{z-index:1;}
+
+/*=================================================================================================*/
+
+.ongletCombat .nom{text-decoration: underline;background-color:#000000;opacity:70%;font-weight:bold;}
+.ongletCombat .nom2{background-color:#000000;opacity:70%;font-size:12px;}

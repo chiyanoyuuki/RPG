@@ -1,0 +1,836 @@
+<div class="app">
+
+    <div class="sauvegarde" (mouseout)="sauveg=false">
+        <p (click)="journal=true">Journal</p>
+        <button type="button" (click)="sauvegarde()">Sauvegarder</button>
+    </div>
+
+    <div class="menu">
+        <p class="clickable fond0" (click)="changePage('Personnages')">Personnages</p>
+        <p class="clickable fond0" (click)="changePage('Map')">Map</p>
+        <p class="clickable fond0" (click)="changePage('Combat')">{{lieuActuel.nom}}</p>
+    </div>
+
+    <div class="contenu">
+
+        <!-- ===================================================JOURNAL DES QUETES======================================================================= -->
+
+        <div class="journal" *ngIf="journal==true" (click)="focus=='quetes'?null:journal='false'">
+            <div class="fond0" (mouseover)="focus='quetes'" (mouseout)="focus=undefined">
+                <p class="nomMoyen">Quêtes Principales</p>
+                <div class="quete fondSansPadding" *ngFor="let quete of quetesprincipales">
+                    <div class="flexdiv">
+                        <p class="etapeNom etatMoyen">(Etape {{quete.etape}}) - {{quete.nom}}</p>
+                        <p class="etatMoyen">{{quete.etat}}</p>
+                        <p class="persoQuete etatMoyen">{{quete.perso}}</p>
+                    </div>
+                    <p class="fond">{{quete.description}}</p>
+                </div>
+                <p class="nomMoyen">Quêtes Secondaires</p>
+                <div class="quete fondSansPadding" *ngFor="let quete of quetessecondaires">
+                    <div class="flexdiv">
+                        <p class="etapeNom etatMoyen">(Etape {{quete.etape}}) - {{quete.nom}}</p>
+                        <p class="etatMoyen">{{quete.etat}}</p>
+                    </div>
+                    <p class="fond">{{quete.description}}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================================GESTION DU TOURNOI============================================================================= -->
+
+        <div class="journal tournoi" *ngIf="tournoi==true&&tournoidemare==false">
+            <p class="clickable retour fond0" (click)="tournoi='false'">Retour</p>
+            <div class="fond0">
+                <div class="flexdiv2">
+                    <div class="fond addParticipant">
+                        <p class="clickable" (click)="solo=='T'?solo='F':solo='T'">{{solo}}</p>
+                        <select type="number" [(ngModel)]="selectParticipant">
+                            <option [ngClass]="{'persoSelect':participant.histoire!=undefined}"
+                                *ngFor="let participant of getPnjs2()" [ngValue]="participant">{{'('+participant.niveau
+                                + ') ' +participant.nom}}</option>
+                        </select>
+                        <p class="clickable" (click)="addParticipant()">+</p>
+                    </div>
+                </div>
+
+                <div class="listePersos fond0">
+                    <ng-template ngFor let-perso [ngForOf]="tournament">
+                        <div class="persoListe clickable" (click)="deleteParticipant(perso)">
+                            <p class="level">{{perso.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{perso.image}}m.png" />
+                            <p>{{perso.nom}}</p>
+                        </div>
+                    </ng-template>
+                </div>
+
+                <div>
+                    <p>Participants : {{tournament.length}} / 16</p>
+                </div>
+
+                <div class="flexjusti">
+                    <p class="clickable fond0" (click)="validerTournoi()">Valider le tournoi</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- =================================================ARBRE DE TOURNOI========================================================================= -->
+
+        <div class="journal tournoi" *ngIf="tournoi==true&&tournoidemare==true">
+            <p class="clickable retour fond0" (click)="tournoi='false'">Retour</p>
+
+            <div class="fond0">
+                <div class="tour tour2 flexjusti">
+                    <div class="flexjusti combat" *ngFor="let combat of TOURNOI.tour2;let i=index">
+                        <div class="persoListe clickable" *ngIf="combat.p1">
+                            <p class="level">{{combat.p1.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p1.image}}m.png" />
+                            <p>{{combat.p1.nom}}</p>
+                        </div>
+
+                        <div class="persoListe clickable" *ngIf="combat.p2">
+                            <p class="level">{{combat.p2.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p2.image}}m.png" />
+                            <p>{{combat.p2.nom}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour tour4 flexjusti">
+                    <div class="flexjusti combat" *ngFor="let combat of TOURNOI.tour4;let i=index">
+                        <div [ngClass]="{'winner':combat.p1.win4==true,'loser':combat.p1.win4==false}"
+                            class="persoListe clickable" *ngIf="combat.p1" (click)="win4(combat.p1,combat.p2,i)">
+                            <p class="level">{{combat.p1.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p1.image}}m.png" />
+                            <p>{{combat.p1.nom}}</p>
+                        </div>
+
+                        <div [ngClass]="{'winner':combat.p2.win4==true,'loser':combat.p2.win4==false}"
+                            class="persoListe clickable" *ngIf="combat.p2" (click)="win4(combat.p2,combat.p1,i)">
+                            <p class="level">{{combat.p2.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p2.image}}m.png" />
+                            <p>{{combat.p2.nom}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour tour8 flexjusti">
+                    <div class="flexjusti combat" *ngFor="let combat of TOURNOI.tour8;let i=index">
+                        <div [ngClass]="{'winner':combat.p1.win8==true,'loser':combat.p1.win8==false}"
+                            class="persoListe clickable" *ngIf="combat.p1" (click)="win8(combat.p1,combat.p2,i)">
+                            <p class="level">{{combat.p1.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p1.image}}m.png" />
+                            <p>{{combat.p1.nom}}</p>
+                        </div>
+
+                        <div [ngClass]="{'winner':combat.p2.win8==true,'loser':combat.p2.win8==false}"
+                            class="persoListe clickable" *ngIf="combat.p2" (click)="win8(combat.p2,combat.p1,i)">
+                            <p class="level">{{combat.p2.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p2.image}}m.png" />
+                            <p>{{combat.p2.nom}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour tour16 flexjusti">
+                    <div class="flexjusti combat" *ngFor="let combat of TOURNOI.tour16;let i=index">
+                        <div [ngClass]="{'winner':combat.p1.win16==true,'loser':combat.p1.win16==false}"
+                            class="persoListe clickable" *ngIf="combat.p1" (click)="win16(combat.p1,combat.p2,i)">
+                            <p class="level">{{combat.p1.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p1.image}}m.png" />
+                            <p>{{combat.p1.nom}}</p>
+                        </div>
+
+                        <div [ngClass]="{'winner':combat.p2.win16==true,'loser':combat.p2.win16==false}"
+                            class="persoListe clickable" *ngIf="combat.p2" (click)="win16(combat.p2,combat.p1,i)">
+                            <p class="level">{{combat.p2.niveau}}</p>
+                            <img class="img150" src="./assets/images/{{combat.p2.image}}m.png" />
+                            <p>{{combat.p2.nom}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ====================================================PERSONNAGE====================================================================== -->
+
+        <div [hidden]="page!='Personnages'" class="pagePersonnages">
+
+            <div class="listePersos fond0">
+                <ng-template ngFor let-perso [ngForOf]="personnages">
+                    <div class="clickable persoListe" *ngIf="perso.actif" (click)="clickPerso(perso)">
+                        <p class="level">{{perso.niveau}}</p>
+                        <img class="img150" src="./assets/images/{{perso.image}}m.png" />
+                        <p>{{perso.nom}}</p>
+                    </div>
+                </ng-template>
+
+            </div>
+
+            <div class="dataPerso">
+
+                <!--
+                    PARTIE PERSONNAGE GAUCHE
+                -->
+
+                <div class="statsPerso fond0">
+                    <p class="nomGros">{{personnageClicked.nom}}</p>
+                    <p class="etatGros">{{personnageClicked.etat}}</p>
+                    <div class="flexdiv">
+                        <p class="moins" [hidden]="focus!=personnageClicked.nom+'niveau'"
+                            (click)="personnageClicked.niveau>0?personnageClicked.niveau=personnageClicked.niveau-1:null">
+                        <p class="etatGros" (mouseover)="focus=personnageClicked.nom+'niveau'">Niveau
+                            {{personnageClicked.niveau}}</p>
+                        <p class="plus" [hidden]="focus!=personnageClicked.nom+'niveau'"
+                            (click)="personnageClicked.niveau=personnageClicked.niveau+1">
+                        </p>
+                    </div>
+                    <div class="data">
+                        <div class="gauche">
+                            <div class="fond histoire">
+                                <p>{{personnageClicked.histoire}}</p>
+                            </div>
+                            <div class="pvmana">
+                                <div class="pvmanacont">
+                                    <div class="pvmanabloc" (mouseover)="focus=personnageClicked.nom+'pv'"
+                                        (mouseout)="focus=undefined">
+                                        <p class="nb nbpv">{{personnageClicked.pdv}}/{{personnageClicked.pdvmax}}</p>
+                                        <p class="moins moins2"
+                                            (click)="personnageClicked.pdvmax>0?personnageClicked.pdvmax=personnageClicked.pdvmax-1:null;personnageClicked.pdv>0?personnageClicked.pdv=personnageClicked.pdv-1:null">
+                                        </p>
+                                        <p class="moins" [hidden]="focus!=personnageClicked.nom+'pv'"
+                                            (click)="personnageClicked.pdv>0?personnageClicked.pdv=personnageClicked.pdv-1:null">
+                                        </p>
+                                        <div class="barre">
+                                            <img class="front" src="./assets/images/pdv.png" />
+                                            <img class="remplissage" src="./assets/images/pdvfill.PNG"
+                                                [style.width]="calculerPDV(personnageClicked.pdv,personnageClicked.pdvmax)" />
+                                        </div>
+                                        <p class="plus" [hidden]="focus!=personnageClicked.nom+'pv'"
+                                            (click)="personnageClicked.pdv<personnageClicked.pdvmax?personnageClicked.pdv=personnageClicked.pdv+1:null">
+                                        </p>
+                                        <p class="plus plus2"
+                                            (click)="personnageClicked.pdvmax=personnageClicked.pdvmax+1;personnageClicked.pdv=personnageClicked.pdv+1">
+                                        </p>
+                                    </div>
+                                    <div class="pvmanabloc" (mouseover)="focus=personnageClicked.nom+'mana'"
+                                        (mouseout)="focus=undefined">
+                                        <p class="nb nbmana">{{personnageClicked.mana}}/{{personnageClicked.manamax}}
+                                        </p>
+                                        <p class="moins moins2"
+                                            (click)="personnageClicked.manamax>0?personnageClicked.manamax=personnageClicked.manamax-1:null;personnageClicked.mana>0?personnageClicked.mana=personnageClicked.mana-1:null">
+                                        </p>
+                                        <p class="moins" [hidden]="focus!=personnageClicked.nom+'mana'"
+                                            (click)="personnageClicked.mana>0?personnageClicked.mana=personnageClicked.mana-1:null">
+                                        </p>
+                                        <div class="barre">
+                                            <img class="front" src="./assets/images/mana.png" />
+                                            <img class="remplissage" src="./assets/images/manafill.PNG"
+                                                [style.width]="calculerMANA(personnageClicked.mana,personnageClicked.manamax)" />
+                                        </div>
+                                        <p class="plus" [hidden]="focus!=personnageClicked.nom+'mana'"
+                                            (click)="personnageClicked.mana<personnageClicked.manamax?personnageClicked.mana=personnageClicked.mana+1:null">
+                                        </p>
+                                        <p class="plus plus2"
+                                            (click)="personnageClicked.manamax=personnageClicked.manamax+1;personnageClicked.mana=personnageClicked.mana+1">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tableauStats fond">
+                                <div class="stats">
+                                    <div *ngFor="let stat of personnageClicked.stats">
+                                        <div class="ligneTab" (mouseover)="focus=stat" (mouseout)="focus=undefined">
+                                            <p class="moins" [hidden]="focus!=stat"
+                                                (click)="stat.qte>0?stat.qte=stat.qte-1:null">
+                                            </p>
+                                            <p>{{stat.nom}} : {{stat.qte}}</p>
+                                            <p class="plus" [hidden]="focus!=stat" (click)="stat.qte=stat.qte+1">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p *ngFor="let sort of personnageClicked.sorts;let i=index">
+                                        {{sort==''?'-':'Compétence '+(i+1)+' : '+sort}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="droite">
+                            <div class="fond">
+                                <img src="./assets/images/{{personnageClicked.image}}.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                    PARTIE INVENTAIRE
+                -->
+
+                <div class="partieDroite">
+
+                    <div class="fond0 partieInventaire">
+                        <div class="argent fondSansPadding" (mouseover)="focus=personnageClicked+'pieces'"
+                            (mouseout)="focus=undefined">
+                            <p class="moins" [hidden]="focus!=personnageClicked+'pieces'"
+                                (click)="personnageClicked.argent>0?personnageClicked.argent=personnageClicked.argent-1:null">
+                                -</p>
+                            <p>{{personnageClicked.argent}} pièces d'or</p>
+                            <p class="plus" [hidden]="focus!=personnageClicked+'pieces'"
+                                (click)="personnageClicked.argent=personnageClicked.argent+1">+</p>
+                        </div>
+
+                        <div class="inventaire">
+                            <div class="objet fondSansPadding"
+                                *ngFor="let objet of personnageClicked.inventaire;let i=index" (mouseover)="obj[i]=true"
+                                (mouseout)="obj[i]=false">
+                                <div class="case" *ngIf="objet.qte>0">
+                                    <p class="moins" [hidden]="obj[i]==false" (click)="qteObjet(-1,i)"> </p>
+                                    <p class="nom">{{objet.nom}}</p>
+                                    <p class="plus" [hidden]="obj[i]==false" (click)="qteObjet(1,i)"> </p>
+                                    <p class="qte fond1">{{objet.qte}}</p>
+                                </div>
+                                <div class="case" *ngIf="objet.qte==0" (click)="clicked=objet;nouvelObjet=objet.nom">
+                                    <div class="clickable" *ngIf="clicked!=objet"></div>
+                                    <div *ngIf="clicked==objet">
+                                        <textarea class="textarea" type="text" [(ngModel)]="nouvelObjet"
+                                            placeholder="Rentrer un nouvel objet"></textarea>
+                                        <button type="button"
+                                            (click)="objet.nom=nouvelObjet;objet.qte=1;clicked=undefined;nouvelObjet=''">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                        PARTIE FAMILIER
+                    -->
+
+                    <div class="familier fond0" *ngIf="familier!=undefined">
+                        <p class="nomMoyen">{{familier.nom}}</p>
+                        <p class="etatMoyen">{{familier.etat}}</p>
+                        <div class="centre">
+                            <div class="gauche">
+                                <div class="pvmana">
+                                    <div class="pvmanacont">
+                                        <div class="pvmanabloc" (mouseover)="focus=familier.nom+'pv'"
+                                            (mouseout)="focus=undefined">
+                                            <p class="nb nbpv">{{familier.pdv}}/{{familier.pdvmax}}</p>
+                                            <p class="moins" [hidden]="focus!=familier.nom+'pv'"
+                                                (click)="familier.pdv>0?familier.pdv=familier.pdv-1:null">
+                                            </p>
+                                            <div class="barre">
+                                                <img class="front" src="./assets/images/pdv.png" />
+                                                <img class="remplissage" src="./assets/images/pdvfill.PNG"
+                                                    [style.width]="calculerPDV(familier.pdv,familier.pdvmax)" />
+                                            </div>
+                                            <p class="plus" [hidden]="focus!=familier.nom+'pv'"
+                                                (click)="familier.pdv<familier.pdvmax?familier.pdv=familier.pdv+1:null">
+                                            </p>
+                                        </div>
+                                        <div class="pvmanabloc" (mouseover)="focus=familier.nom+'mana'"
+                                            (mouseout)="focus=undefined">
+                                            <p class="nb nbmana">{{familier.mana}}/{{familier.manamax}}</p>
+                                            <p class="moins" [hidden]="focus!=familier.nom+'mana'"
+                                                (click)="familier.mana>0?familier.mana=familier.mana-1:null">
+                                            </p>
+                                            <div class="barre">
+                                                <img class="front" src="./assets/images/mana.png" />
+                                                <img class="remplissage" src="./assets/images/manafill.PNG"
+                                                    [style.width]="calculerMANA(familier.mana,familier.manamax)" />
+                                            </div>
+                                            <p class="plus" [hidden]="focus!=familier.nom+'mana'"
+                                                (click)="familier.mana<familier.manamax?familier.mana=familier.mana+1:null">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="droite">
+                                <div class="fond">
+                                    <img src="./assets/images/{{familier.nom}}.png" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================================MAP================================================================= -->
+
+        <div [hidden]="page!='Map'" class="ongletMap">
+
+            <div class="map">
+                <img class="fondSansPadding imgmap" src="./assets/images/map.png" />
+
+                <div class="persoMap" *ngFor="let type of friends">
+                    <div class="divPerso" *ngFor="let perso of type;let i=index" [style.top]="get(perso.y)"
+                        [style.left]="get(perso.x)" [attr.id]="perso.nom+i+perso.team" [ngClass]="{'dead':perso.pdv==0}"
+                        (cdkDragEnded)="dragEnd($event,perso.nom+i+perso.team,true,perso)" cdkDrag>
+                        <ng-template [ngIf]="perso.actif||perso.actif==undefined">
+                            <p class="nom">{{perso.nom}}</p>
+                            <div class="contPerso">
+                                <div class="personnage">
+                                    <p class="level">{{perso.niveau}}</p>
+                                    <img
+                                        src="./assets/images/{{(perso.forme==undefined||perso.forme=='Humain'?perso.image:perso.forme)}}m.png" />
+                                </div>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+
+                <div *ngFor="let lieu of lieux" class="lieuMap clickable2" [style.left]="lieu.x+'px'"
+                    [style.top]="lieu.y+'px'" [style.width]="lieu.finx+'px'" [style.height]="lieu.finy+'px'"
+                    (mouseover)="focus=lieu" (mouseout)="focus=undefined" (click)="clickLieu(lieu)">
+                    <p class="nomLieu" [hidden]="focus!=lieu">{{lieu.nom}}</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- =======================================================COMBAT=================================================================== -->
+
+        <div [hidden]="page!='Combat'" class="ongletCombat">
+
+            <div class="sauvegarde">
+                <button type="button" (click)="reinitialiserStrategie()">Réinitialiser Stratégie</button>
+                <select type="number" [(ngModel)]="lieuActuel" (change)="data.lieuActuel=lieuActuel.id">
+                    <option *ngFor="let lieu of lieux" [ngValue]="lieu">{{lieu.nom}}</option>
+                </select>
+            </div>
+
+
+            <div class="map">
+
+                <!-- BOUTIQUE -->
+                <div class="ongletBoutique" *ngIf="lieuActuel.image.startsWith('Shop')">
+                    <div class="flexBoutique">
+                        <div class="inventaire">
+                            <div [style.opacity]="objet.qte==0?'30%':'100%'" class="objet fondSansPadding"
+                                *ngFor="let objet of boutique.objets;let i=index" (mouseover)="obj[i]=true"
+                                (mouseout)="obj[i]=false">
+                                <div class="case">
+                                    <p class="nom">{{objet.nom}}</p>
+                                    <p [ngClass]="{'plusRouge':objet.prix>personnageClicked.argent}" class="plus"
+                                        [hidden]="obj[i]==false" (click)="buyObjet(objet)"> </p>
+                                    <p class="qte fond1">{{objet.qte}}</p>
+                                    <p [ngClass]="{'colred':objet.prix>personnageClicked.argent}"
+                                        class="qte fond1 colgold">{{objet.prix}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blocFond"></div>
+
+                        <div class="botBoutique">
+                            <div>
+                                <select type="number" [(ngModel)]="personnageClicked">
+                                    <option *ngFor="let perso of personnages" [ngValue]="perso">{{perso.nom}}</option>
+                                </select>
+                                <div class="flexjusti">
+                                    <p>{{personnageClicked.argent}} PO</p>
+                                </div>
+                            </div>
+
+                            <div class="widthunset">
+                                <img class="personnage" src="./assets/images/{{personnageClicked.image}}m.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIN BOUTIQUE -->
+
+                <!-- CATACOMBES -->
+                <div class="catacombes" *ngIf="lieuActuel.id=='labyrinthesouterrainfjorh'">
+                    <ng-template ngFor let-ligne [ngForOf]="catacombesFjorh" let-i="index">
+                        <div class="ligne">
+                            <ng-template ngFor let-case [ngForOf]="ligne" let-j="index">
+                                <div (click)="case=='.'||case=='-'?clickCase(i,j):null" class="case" [ngClass]="{
+                                'caseVisible':case=='O'||case=='.'||case=='-'||case=='x',
+                                'clickable':case=='.'||case=='-',
+                                'caseMur':case=='x',
+                                'caseNotVisited':case=='.',
+                                'caseActuelle':case=='O',
+                                'caseVisited':case=='-'}">
+                                </div>
+                            </ng-template>
+                        </div>
+                    </ng-template>
+                </div>
+                <!-- FIN CATACOMBES -->
+
+                <div *ngFor="let lieu of lieuActuel.inside" class="lieuMap clickable2" [style.left]="lieu.x+'px'"
+                    [style.top]="lieu.y+'px'" [style.width]="lieu.finx+'px'" [style.height]="lieu.finy+'px'"
+                    (mouseover)="focus=lieu" (mouseout)="focus=undefined" (click)="clickLieu(lieu)">
+                    <p class="nomLieu" [hidden]="focus!=lieu">{{lieu.nom}}</p>
+                </div>
+
+                <img class="fondSansPadding imgmap" src="./assets/images/{{lieuActuel.image}}.png" />
+
+
+                <div class="persoMap" *ngFor="let type of friends">
+                    <div class="divPerso" *ngFor="let perso of type;let i=index" [style.top]="get(perso.ycombat)"
+                        [style.left]="get(perso.xcombat)" [attr.id]="perso.nom+'combat'+i+perso.team"
+                        (cdkDragEnded)="dragEnd($event,perso.nom+'combat'+i+perso.team,false,perso)"
+                        [ngClass]="{'dead':perso.pdv==0}" cdkDrag>
+                        <ng-template [ngIf]="perso.actif||perso.actif==undefined">
+                            <p class="nom">{{perso.nom}}</p>
+                            <p class="nom2">{{perso.etat==''?'-':perso.etat}}</p>
+                            <div class="pvmana">
+                                <div class="pvmanacont">
+                                    <div class="pvmanabloc" (mouseover)="focus=perso.nom+'pv'"
+                                        (mouseout)="focus=undefined">
+                                        <p class="nb nbpv">{{perso.pdv}}/{{perso.pdvmax}}</p>
+                                        <p class="moins" [hidden]="focus!=perso.nom+'pv'"
+                                            (click)="perso.pdv>0?perso.pdv=perso.pdv-1:null">
+                                        </p>
+                                        <div class="barre">
+                                            <img class="front" src="./assets/images/pdv.png" />
+                                            <img class="remplissage" src="./assets/images/pdvfill.PNG"
+                                                [style.width]="calculerPDV(perso.pdv,perso.pdvmax)" />
+                                        </div>
+                                        <p class="plus" [hidden]="focus!=perso.nom+'pv'"
+                                            (click)="perso.pdv<perso.pdvmax?perso.pdv=perso.pdv+1:null">
+                                        </p>
+                                    </div>
+                                    <div class="pvmanabloc" (mouseover)="focus=perso.nom+'mana'"
+                                        (mouseout)="focus=undefined">
+                                        <p class="nb nbmana">{{perso.mana}}/{{perso.manamax}}</p>
+                                        <p class="moins" [hidden]="focus!=perso.nom+'mana'"
+                                            (click)="perso.mana>0?perso.mana=perso.mana-1:null">
+                                        </p>
+                                        <div class="barre">
+                                            <img class="front" src="./assets/images/mana.png" />
+                                            <img class="remplissage" src="./assets/images/manafill.PNG"
+                                                [style.width]="calculerMANA(perso.mana,perso.manamax)" />
+                                        </div>
+                                        <p class="plus" [hidden]="focus!=perso.nom+'mana'"
+                                            (click)="perso.mana<perso.manamax?perso.mana=perso.mana+1:null">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="personnage2">
+                                <div class="personnage">
+                                    <p class="level">{{perso.niveau}}</p>
+                                    <img
+                                        src="./assets/images/{{(perso.forme==undefined||perso.forme=='Humain'?perso.image:perso.forme)}}m.png" />
+                                </div>
+                            </div>
+                        </ng-template>
+                    </div>
+                </div>
+
+                <div class="persoMap" *ngFor="let type of hostiles">
+                    <div class="divPerso" *ngFor="let perso of type;let i=index" [style.top]="get(perso.ycombat)"
+                        [style.left]="get(perso.xcombat)" [attr.id]="perso.nom+'combat'+i+perso.team"
+                        (cdkDragEnded)="dragEnd($event,perso.nom+'combat'+i+perso.team,false,perso,true,i)"
+                        [ngClass]="{'dead':perso.pdv==0,'boss':perso.type=='boss','megaboss':perso.type=='megaboss'}"
+                        cdkDrag>
+                        <p class="nom">{{perso.nom}}</p>
+                        <p class="nom2">{{perso.etat==''?'-':perso.etat}}</p>
+
+                        <div class="pvmana">
+                            <div class="pvmanacont">
+                                <div class="pvmanabloc" (mouseover)="focus=perso.nom+'pv'" (mouseout)="focus=undefined">
+                                    <p class="nb nbpv">{{perso.pdv}}/{{perso.pdvmax}}</p>
+                                    <p class="moins" [hidden]="focus!=perso.nom+'pv'"
+                                        (click)="perso.pdv>0?perso.pdv=perso.pdv-1:null">
+                                    </p>
+                                    <p class="moins moins2" (click)="perso.pdv>10?perso.pdv=perso.pdv-10:perso.pdv=0">
+                                    </p>
+                                    <div class="barre">
+                                        <img class="front" src="./assets/images/pdv2.PNG" />
+                                        <img class="remplissage" src="./assets/images/pdvfill2.PNG"
+                                            [style.width]="calculerPDV(perso.pdv,perso.pdvmax)" />
+                                    </div>
+                                    <p class="plus" [hidden]="focus!=perso.nom+'pv'"
+                                        (click)="perso.pdv<perso.pdvmax?perso.pdv=perso.pdv+1:null">
+                                    </p>
+                                    <p class="plus plus2"
+                                        (click)="perso.pdv<perso.pdvmax-10?perso.pdv=perso.pdv+10:perso.pdv=perso.pdvmax">
+                                    </p>
+                                </div>
+                                <div class="pvmanabloc" (mouseover)="focus=perso.nom+'mana'"
+                                    (mouseout)="focus=undefined">
+                                    <p class="nb nbmana">{{perso.mana}}/{{perso.manamax}}</p>
+                                    <p class="moins" [hidden]="focus!=perso.nom+'mana'"
+                                        (click)="perso.mana>0?perso.mana=perso.mana-1:null">
+                                    </p>
+                                    <p class="moins moins2"
+                                        (click)="perso.mana>10?perso.mana=perso.mana-10:perso.mana=0">
+                                    </p>
+                                    <div class="barre">
+                                        <img class="front" src="./assets/images/mana.png" />
+                                        <img class="remplissage" src="./assets/images/manafill.PNG"
+                                            [style.width]="calculerMANA(perso.mana,perso.manamax)" />
+                                    </div>
+                                    <p class="plus" [hidden]="focus!=perso.nom+'mana'"
+                                        (click)="perso.mana<perso.manamax?perso.mana=perso.mana+1:null">
+                                    </p>
+                                    <p class="plus plus2"
+                                        (click)="perso.mana<perso.manamax-10?perso.mana=perso.mana+10:perso.mana=perso.manamax">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="personnage2">
+                            <div class="personnage">
+                                <p class="level">{{perso.niveau}}</p>
+                                <img src="./assets/images/{{perso.image}}m.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================BOUTIQUE============================================================================== -->
+
+        <div [hidden]="page!='Boutique'" class="ongletBoutique">
+            <div class="map">
+                <div class="lieuMap clickable2" (click)="page='Combat'">
+                    <p>Sortir de la boutique</p>
+                </div>
+                <img class="fondSansPadding imgmap" src="./assets/images/{{boutique.nom}}.png" />
+
+                <div class="inventaire">
+                    <div [style.opacity]="objet.qte==0?'30%':'100%'" class="objet fondSansPadding"
+                        *ngFor="let objet of boutique.objets;let i=index" (mouseover)="obj[i]=true"
+                        (mouseout)="obj[i]=false">
+                        <div class="case">
+                            <p class="nom">{{objet.nom}}</p>
+                            <p [ngClass]="{'plusRouge':objet.prix>personnageClicked.argent}" class="plus"
+                                [hidden]="obj[i]==false" (click)="buyObjet(objet)"> </p>
+                            <p class="qte fond1">{{objet.qte}}</p>
+                            <p [ngClass]="{'colred':objet.prix>personnageClicked.argent}" class="qte fond1 colgold">
+                                {{objet.prix}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blocFond"></div>
+
+                <div class="botBoutique">
+                    <div>
+                        <select type="number" [(ngModel)]="personnageClicked">
+                            <option *ngFor="let perso of personnages" [ngValue]="perso">{{perso.nom}}</option>
+                        </select>
+                        <div class="flexjusti">
+                            <p>{{personnageClicked.argent}} PO</p>
+                        </div>
+                    </div>
+
+                    <div class="widthunset">
+                        <img class="personnage" src="./assets/images/{{personnageClicked.image}}m.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================================================== -->
+
+        <div class="positionUnset" [hidden]="page!='Map'&&page!='Combat'">
+
+            <div class="positionUnset">
+                <div class="addAmi">
+                    <p class="clickable" (click)="solo=='T'?solo='F':solo='T'">{{solo}}</p>
+                    <select type="number" [(ngModel)]="selectAmi">
+                        <option *ngFor="let ami of getPnjs()" [ngValue]="ami">{{'('+ami.niveau + ') ' +ami.nom}}
+                        </option>
+                    </select>
+                    <p class="clickable" (click)="addAmi()">+</p>
+                    <p class="clickable" (click)="desac()">X</p>
+                </div>
+            </div>
+
+            <div class="positionUnset">
+                <div class="addEnnemi">
+                    <p class="clickable" (click)="solo=='T'?solo='F':solo='T'">{{solo}}</p>
+                    <select type="number" [(ngModel)]="selectEnnemi">
+                        <option *ngFor="let ennemi of getPnjs()" [ngValue]="ennemi">{{'('+ennemi.niveau + ') '
+                            +ennemi.nom}}</option>
+                    </select>
+                    <p class="clickable" (click)="addEnnemi()">+</p>
+                </div>
+            </div>
+
+            <div class="positionUnset" *ngFor="let type of friends;let x=index">
+                <div class="persocote fond0" (mouseover)="perso.actif||perso.actif==undefined?null:focus=perso.nom+i"
+                    (mouseout)="perso.actif||perso.actif==undefined?null:focus=undefined"
+                    [ngClass]="{'height110':!perso.actif}" *ngFor="let perso of type;let i=index"
+                    [style.top]="getPosTop(x,i)" [ngClass]="{'dead':perso.pdv==0}">
+
+                    <ng-template [ngIf]="perso.actif==false" (mouseover)="focus=perso.nom+i"
+                        (mouseout)="focus=undefined">
+                        <div class="actionperso actionPersoAmi">
+                            <p class="reduce clickable" (mouseover)="focus=perso.nom+i" (mouseout)="focus=undefined"
+                                [hidden]="focus!=perso.nom+i" (click)="perso.actif=true">-</p>
+                        </div>
+
+                        <div class="droite">
+                            <p class="nom" [ngClass]="{'clickable':x==0}" (click)="x==0?clickPerso2(perso):null">
+                                {{perso.nom}}</p>
+                        </div>
+                    </ng-template>
+
+                    <ng-template [ngIf]="perso.actif||perso.actif==undefined">
+                        <div class="actionperso actionPersoAmi">
+                            <p class="reduce clickable" (mouseover)="focus=perso.nom+i" (mouseout)="focus=undefined"
+                                [hidden]="focus!=perso.nom+i" (click)="perso.actif=false">-</p>
+                            <select type="number" (mouseover)="focus=perso.nom+i" [(ngModel)]="perso.forme"
+                                [hidden]="focus!=perso.nom+i" *ngIf="x==0&&perso.formes.length>1">
+                                <option (mouseover)="focus=perso.nom+i" *ngFor="let forme of perso.formes"
+                                    [ngValue]="forme">{{forme}}</option>
+                            </select>
+                        </div>
+
+                        <div class="actionperso actionPersoAmi" *ngIf="x==2">
+                            <p class="delete clickable" (mouseover)="focus=perso.nom+i" (mouseout)="focus=undefined"
+                                [hidden]="focus!=perso.nom+i" (click)="delete(false,perso)">x</p>
+                            <p class="changeside clickable" (mouseover)="focus=perso.nom+i" (mouseout)="focus=undefined"
+                                [hidden]="focus!=perso.nom+i" (click)="changeside(false,perso)">></p>
+                        </div>
+
+                        <div class="widthunset" (mouseover)="focus=perso.nom+i" (mouseout)="focus=undefined">
+                            <p class="level">{{perso.niveau}}</p>
+                            <img class="personnage"
+                                src="./assets/images/{{(perso.forme==undefined||perso.forme=='Humain'?perso.image:perso.forme)}}m.png" />
+                        </div>
+
+                        <div class="droite">
+                            <p class="nom" [ngClass]="{'clickable':x==0}" (click)="x==0?clickPerso2(perso):null">
+                                {{perso.nom}}</p>
+                            <p class="nom2 clickable" (click)="clicked2=perso;nouveletat=perso.etat"
+                                *ngIf="perso!=clicked2">{{perso.etat==''?'-':perso.etat}}</p>
+                            <div class="nom" *ngIf="perso==clicked2">
+                                <input type="text" [(ngModel)]="nouveletat" placeholder="Rentrer un nouvel état">
+                                <button type="button"
+                                    (click)="perso.etat=nouveletat;clicked2=undefined;nouveletat=''">Ok</button>
+                            </div>
+                            <div class="pvmana">
+                                <div class="pvmanacont">
+                                    <div class="pvmanabloc" (mouseover)="focus=perso.nom+'pv'"
+                                        (mouseout)="focus=undefined">
+                                        <p class="nb nbpv">{{perso.pdv}}/{{perso.pdvmax}}</p>
+                                        <p class="moins" [hidden]="focus!=perso.nom+'pv'"
+                                            (click)="perso.pdv>0?perso.pdv=perso.pdv-1:null">
+                                        </p>
+                                        <div class="barre">
+                                            <img class="front" src="./assets/images/pdv.png" />
+                                            <img class="remplissage" src="./assets/images/pdvfill.PNG"
+                                                [style.width]="calculerPDV(perso.pdv,perso.pdvmax)" />
+                                        </div>
+                                        <p class="plus" [hidden]="focus!=perso.nom+'pv'"
+                                            (click)="perso.pdv<perso.pdvmax?perso.pdv=perso.pdv+1:null">
+                                        </p>
+                                    </div>
+                                    <div class="pvmanabloc" (mouseover)="focus=perso.nom+'mana'"
+                                        (mouseout)="focus=undefined">
+                                        <p class="nb nbmana">{{perso.mana}}/{{perso.manamax}}</p>
+                                        <p class="moins" [hidden]="focus!=perso.nom+'mana'"
+                                            (click)="perso.mana>0?perso.mana=perso.mana-1:null">
+                                        </p>
+                                        <div class="barre">
+                                            <img class="front" src="./assets/images/mana.png" />
+                                            <img class="remplissage" src="./assets/images/manafill.PNG"
+                                                [style.width]="calculerMANA(perso.mana,perso.manamax)" />
+                                        </div>
+                                        <p class="plus" [hidden]="focus!=perso.nom+'mana'"
+                                            (click)="perso.mana<perso.manamax?perso.mana=perso.mana+1:null">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+
+            <ng-template [ngIf]="page!='Map'">
+                <div class="persocote ennemi fond0" *ngFor="let perso of ennemisActuels;let i=index"
+                    [style.top]="(45+(i*120))+'px'" [ngClass]="{'dead':perso.pdv==0}">
+
+                    <div class="actionperso">
+                        <p class="delete clickable" (mouseover)="focus='ennemi'+i" (mouseout)="focus=undefined"
+                            [hidden]="focus!='ennemi'+i" (click)="delete(true,perso)">x</p>
+                        <p class="changeside clickable" (mouseover)="focus='ennemi'+i" (mouseout)="focus=undefined"
+                            [hidden]="focus!='ennemi'+i" (click)="changeside(true,perso)">
+                            ~</p>
+                    </div>
+
+                    <div [hidden]="focus!='ennemi'+i||perso.desc==undefined" class="tooltip">
+                        <p>{{perso.desc}}</p>
+                    </div>
+
+                    <div class="droite">
+                        <p class="nom clickable" (click)="clicked=perso;nouveaunom=perso.nom" *ngIf="perso!=clicked">
+                            {{perso.nom}}</p>
+                        <div class="nom" *ngIf="perso==clicked">
+                            <input type="text" [(ngModel)]="nouveaunom" placeholder="Rentrer un nouveau nom">
+                            <button type="button"
+                                (click)="perso.nom=nouveaunom;clicked=undefined;nouveaunom=''">Ok</button>
+                        </div>
+                        <p class="nom2 clickable" (click)="clicked2=perso;nouveletat=perso.etat"
+                            *ngIf="perso!=clicked2">
+                            {{perso.etat==''?'-':perso.etat}}</p>
+                        <div class="nom" *ngIf="perso==clicked2">
+                            <input type="text" [(ngModel)]="nouveletat" placeholder="Rentrer un nouvel état">
+                            <button type="button"
+                                (click)="perso.etat=nouveletat;clicked2=undefined;nouveletat=''">Ok</button>
+                        </div>
+                        <div class="pvmana">
+                            <div class="pvmanacont">
+                                <div class="pvmanabloc" (mouseover)="focus=perso.nom+'pv'+i"
+                                    (mouseout)="focus=undefined">
+                                    <p class="nb nbpv">{{perso.pdv}}/{{perso.pdvmax}}</p>
+                                    <p class="moins" [hidden]="focus!=perso.nom+'pv'+i"
+                                        (click)="perso.pdv>0?perso.pdv=perso.pdv-1:null">
+                                    </p>
+                                    <div class="barre">
+                                        <img class="front" src="./assets/images/pdv2.PNG" />
+                                        <img class="remplissage" src="./assets/images/pdvfill2.PNG"
+                                            [style.width]="calculerPDV(perso.pdv,perso.pdvmax)" />
+                                    </div>
+                                    <p class="plus" [hidden]="focus!=perso.nom+'pv'+i"
+                                        (click)="perso.pdv<perso.pdvmax?perso.pdv=perso.pdv+1:null">
+                                    </p>
+                                </div>
+                                <div class="pvmanabloc" (mouseover)="focus=perso.nom+'mana'+i"
+                                    (mouseout)="focus=undefined">
+                                    <p class="nb nbmana">{{perso.mana}}/{{perso.manamax}}</p>
+                                    <p class="moins" [hidden]="focus!=perso.nom+'mana'+i"
+                                        (click)="perso.mana>0?perso.mana=perso.mana-1:null">
+                                    </p>
+                                    <div class="barre">
+                                        <img class="front" src="./assets/images/mana.png" />
+                                        <img class="remplissage" src="./assets/images/manafill.PNG"
+                                            [style.width]="calculerMANA(perso.mana,perso.manamax)" />
+                                    </div>
+                                    <p class="plus" [hidden]="focus!=perso.nom+'mana'+i"
+                                        (click)="perso.mana<perso.manamax?perso.mana=perso.mana+1:null">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widthunset" (mouseover)="focus='ennemi'+i" (mouseout)="focus=undefined">
+                        <p class="level colred">{{perso.niveau}}</p>
+                        <img class="personnage" src="./assets/images/{{perso.image}}m.png" />
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+
+    </div>
+</div>
