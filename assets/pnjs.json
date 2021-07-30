@@ -14,7 +14,8 @@
         "manamax": 18,
         "mana": 18,
         "tournoi": true,
-        "id":"gontrand"
+        "id":"gontrand",
+        "desc":"Mercenaire originaire de Ghrain"
     },
     {
         "x": 800,
@@ -235,7 +236,8 @@
         "manamax": 20,
         "mana": 20,
         "tournoi": false,
-        "id":"donalbert"
+        "id":"donalbert",
+        "desc":"Barman de la ville de Fjorh, chaleureux."
     },
     {
         "x": 800,
@@ -252,7 +254,8 @@
         "manamax": 8,
         "mana": 8,
         "tournoi": false,
-        "id":"stigius"
+        "id":"stigius",
+        "desc":"Apprenti prêtre de Fjorh, maître soigneur de Sienna"
     },
     {
         "x": 800,
@@ -269,7 +272,9 @@
         "manamax": 42,
         "mana": 42,
         "tournoi": false,
-        "id":"kaynproks"
+        "id":"kaynproks",
+        "type":"boss",
+        "desc":"Un des 4 bras droits armés du roi de Fjorh"
     },
     {
         "x": 800,
@@ -286,7 +291,8 @@
         "manamax": 18,
         "mana": 18,
         "tournoi": false,
-        "id":"sambells"
+        "id":"sambells",
+        "desc":"Petit chef d'un groupe d'asassins"
     },
     {
         "x": 800,
@@ -371,7 +377,8 @@
         "manamax": 18,
         "mana": 18,
         "tournoi": false,
-        "id":"borisgosom"
+        "id":"borisgosom",
+        "desc":"Barman de la ville de Dusk"
     },
     {
         "x": 800,
@@ -388,7 +395,9 @@
         "manamax": 162,
         "mana": 162,
         "tournoi": false,
-        "id":"albusdemitrescu"
+        "id":"albusdemitrescu",
+        "type":"boss",
+        "desc":"Très grand magicien"
     },
     {
         "x": 800,
@@ -422,7 +431,8 @@
         "manamax": 14,
         "mana": 14,
         "tournoi": true,
-        "id":"gerongranduc"
+        "id":"gerongranduc",
+        "desc":"Un des participants du tournoi de Dusk, timide"
     },
     {
         "x": 800,
@@ -439,7 +449,8 @@
         "manamax": 16,
         "mana": 16,
         "tournoi": true,
-        "id":"fredericpulse"
+        "id":"fredericpulse",
+        "desc":"Un des participants du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -456,7 +467,8 @@
         "manamax": 6,
         "mana": 6,
         "tournoi": true,
-        "id":"sophiaberande"
+        "id":"sophiaberande",
+        "desc":"Une des participantes du tournoi de Dusk, amicale"
     },
     {
         "x": 800,
@@ -473,7 +485,8 @@
         "manamax": 12,
         "mana": 12,
         "tournoi": false,
-        "id":"vladsams"
+        "id":"vladsams",
+        "desc":"Un assassin présent lors du raid du repaire à Fjorh"
     },
     {
         "x": 800,
@@ -490,7 +503,8 @@
         "manamax": 2,
         "mana": 2,
         "tournoi": true,
-        "id":"hankpok"
+        "id":"hankpok",
+        "desc":"Un des nains du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -507,7 +521,8 @@
         "manamax": 7,
         "mana": 7,
         "tournoi": true,
-        "id":"klaskdrurf"
+        "id":"klaskdrurf",
+        "desc":"Un des nains du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -524,7 +539,9 @@
         "manamax": 30,
         "mana": 30,
         "tournoi": false,
-        "id":"boromirleroux"
+        "id":"boromirleroux",
+        "type":"boss",
+        "desc":"Un des plus grands assassins"
     },
     {
         "x": 800,
@@ -541,7 +558,8 @@
         "manamax": 6,
         "mana": 6,
         "tournoi": false,
-        "id":"urfbrant"
+        "id":"urfbrant",
+        "desc":"Un des nains du tournoi de Dusk, on raconte que celui-ci traine dans des affaires louches"
     },
     {
         "x": 800,
@@ -558,7 +576,8 @@
         "manamax": 30,
         "mana": 30,
         "tournoi": false,
-        "id":"siviusbregon"
+        "id":"siviusbregon",
+        "desc":"Un mage qui possède l'arène de Dusk"
     },
     {
         "x": 800,
@@ -575,7 +594,8 @@
         "manamax": 12,
         "mana": 12,
         "tournoi": true,
-        "id":"eziogariga"
+        "id":"eziogariga",
+        "desc":"Un des participants du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -592,7 +612,8 @@
         "manamax": 26,
         "mana": 26,
         "tournoi": false,
-        "id":"philippepertovos"
+        "id":"philippepertovos",
+        "desc":"Un des chef de l'armée du roi"
     },
     {
         "x": 800,
@@ -609,7 +630,8 @@
         "manamax": 24,
         "mana": 24,
         "tournoi": true,
-        "id":"gonzagpierdu"
+        "id":"gonzagpierdu",
+        "desc":"Un des participants du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -626,7 +648,8 @@
         "manamax": 14,
         "mana": 14,
         "tournoi": true,
-        "id":"silviaperonus"
+        "id":"silviaperonus",
+        "desc":"Une des participantes du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -643,7 +666,8 @@
         "manamax": 16,
         "mana": 16,
         "tournoi": true,
-        "id":"arthemiskemp"
+        "id":"arthemiskemp",
+        "desc":"Une des participantes du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -660,7 +684,8 @@
         "manamax": 16,
         "mana": 16,
         "tournoi": true,
-        "id":"luciabellongi"
+        "id":"luciabellongi",
+        "desc":"Une des participantes du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -677,7 +702,8 @@
         "manamax": 8,
         "mana": 8,
         "tournoi": true,
-        "id":"perusvondirul"
+        "id":"perusvondirul",
+        "desc":"Une des participantes du tournoi de Dusk, ainsi qu'une assassin qui nous a trahi devant Sam Bells"
     },
     {
         "x": 800,
@@ -694,7 +720,8 @@
         "manamax": 12,
         "mana": 12,
         "tournoi": true,
-        "id":"kyenolympus"
+        "id":"kyenolympus",
+        "desc":"Une des participantes du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -711,7 +738,8 @@
         "manamax": 15,
         "mana": 15,
         "tournoi": true,
-        "id":"olgadurst"
+        "id":"olgadurst",
+        "desc":"Une des participantes du tournoi de Dusk"
     },
     {
         "x": 800,
@@ -790,13 +818,14 @@
         "image": "Norbert Sonn",
         "solo": true,
         "etat": "",
-        "niveau": 4,
-        "pdvmax": 60,
-        "pdv": 60,
+        "niveau": 5,
+        "pdvmax": 80,
+        "pdv": 80,
         "manamax": 0,
         "mana": 0,
         "tournoi": true,
-        "id":"norbertsonn"
+        "id":"norbertsonn",
+        "desc":"Le gagnant du tournoi de Dusk, ainsi que le 'Bro' de Gandalf"
     },
     {
         "x": 800,
@@ -813,7 +842,8 @@
         "manamax": 12,
         "mana": 12,
         "tournoi": false,
-        "id":"viegakoriss"
+        "id":"viegakoriss",
+        "desc":"La forgeronne de la ville de Dusk, et petite amie de Norbert Sonn"
     },
     {
         "x": 800,
@@ -847,7 +877,8 @@
         "manamax": 10,
         "mana": 10,
         "tournoi": false,
-        "id":"erigoleanfl"
+        "id":"erigoleanfl",
+        "desc":"Historien"
     },
     {
         "x": 800,
@@ -864,7 +895,8 @@
         "manamax": 12,
         "mana": 12,
         "tournoi": false,
-        "id":"zorofargo"
+        "id":"zorofargo",
+        "desc":"Un des 4 bras droits armés du roi de Fjorh"
     },
     {
         "x": 800,
@@ -881,7 +913,8 @@
         "manamax": 22,
         "mana": 22,
         "tournoi": false,
-        "id":"arthurjenon"
+        "id":"arthurjenon",
+        "desc":"Un des 4 bras droits armés du roi de Fjorh"
     },
     {
         "x": 800,
@@ -966,7 +999,8 @@
         "manamax": 28,
         "mana": 28,
         "tournoi": false,
-        "id":"benoitfort"
+        "id":"benoitfort",
+        "desc":"Un assassin présent lors du raid du repaire à Fjorh"
     },
     {
         "x": 800,
@@ -983,7 +1017,8 @@
         "manamax": 17,
         "mana": 17,
         "tournoi": false,
-        "id":"bedinekaki"
+        "id":"bedinekaki",
+        "desc":"Un assassin présent lors du raid du repaire à Fjorh"
     },
     {
         "x": 800,
@@ -1119,7 +1154,9 @@
         "manamax": 0,
         "mana": 0,
         "tournoi": false,
-        "id":"hectornovus"
+        "id":"hectornovus",
+        "type":"boss",
+        "desc":"Un des 4 bras droits armés du roi de Fjorh"
     },
     {
         "x": 800,
@@ -1136,7 +1173,9 @@
         "manamax": 112,
         "mana": 112,
         "tournoi": false,
-        "id":"hommeenarmure"
+        "id":"hommeenarmure",
+        "type":"megaboss",
+        "desc":"On dit de lui qu'il est le plus grand épéiste de notre époque, personne ne connaît son véritable nom"
     },
     {
         "x": 800,
@@ -1153,7 +1192,8 @@
         "manamax": 26,
         "mana": 26,
         "tournoi": false,
-        "id":"angusalfronde"
+        "id":"angusalfronde",
+        "desc":"Un des bras droits des assassins"
     },
     {
         "x": 800,
@@ -1170,6 +1210,462 @@
         "manamax": 68,
         "mana": 68,
         "tournoi": false,
-        "id":"legolasmalhombre"
+        "id":"legolasmalhombre",
+        "type":"megaboss",
+        "desc":"Le boss des assassins"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Araignée Géante",
+        "image": "araignee",
+        "solo": false,
+        "etat": "",
+        "niveau": 1,
+        "pdvmax": 20,
+        "pdv": 20,
+        "manamax": 8,
+        "mana": 8,
+        "tournoi": false,
+        "id":"araignee_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Araignée Géante",
+        "image": "araignee",
+        "solo": false,
+        "etat": "",
+        "niveau": 2,
+        "pdvmax": 28,
+        "pdv": 28,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"araignee_2"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Araignée Géante",
+        "image": "araignee",
+        "solo": false,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 34,
+        "pdv": 34,
+        "manamax": 16,
+        "mana": 16,
+        "tournoi": false,
+        "id":"araignee_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Araignée Géante",
+        "image": "araignee",
+        "solo": false,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 40,
+        "pdv": 40,
+        "manamax": 18,
+        "mana": 18,
+        "tournoi": false,
+        "id":"araignee_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Araignée Géante",
+        "image": "araignee",
+        "solo": false,
+        "etat": "",
+        "niveau": 5,
+        "pdvmax": 50,
+        "pdv": 50,
+        "manamax": 20,
+        "mana": 20,
+        "tournoi": false,
+        "id":"araignee_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Araignée Matriarche",
+        "image": "araigneeboss",
+        "solo": true,
+        "etat": "",
+        "niveau": 7,
+        "pdvmax": 64,
+        "pdv": 64,
+        "manamax": 26,
+        "mana": 26,
+        "tournoi": false,
+        "id":"araigneeboss",
+        "type":"boss"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Rat Géant",
+        "image": "Rat Geant",
+        "solo": false,
+        "etat": "",
+        "niveau": 1,
+        "pdvmax": 20,
+        "pdv": 20,
+        "manamax": 8,
+        "mana": 8,
+        "tournoi": false,
+        "id":"rat_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Rat Géant",
+        "image": "Rat Geant",
+        "solo": false,
+        "etat": "",
+        "niveau": 2,
+        "pdvmax": 28,
+        "pdv": 28,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"rat_2"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Rat Géant",
+        "image": "Rat Geant",
+        "solo": false,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 34,
+        "pdv": 34,
+        "manamax": 16,
+        "mana": 16,
+        "tournoi": false,
+        "id":"rat_3"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Rat Géant",
+        "image": "Rat Geant",
+        "solo": false,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 40,
+        "pdv": 40,
+        "manamax": 18,
+        "mana": 18,
+        "tournoi": false,
+        "id":"rat_4"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Rat Géant",
+        "image": "Rat Geant",
+        "solo": false,
+        "etat": "",
+        "niveau": 5,
+        "pdvmax": 50,
+        "pdv": 50,
+        "manamax": 20,
+        "mana": 20,
+        "tournoi": false,
+        "id":"rat_5"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Rat Patriarche",
+        "image": "ratboss",
+        "solo": true,
+        "etat": "",
+        "niveau": 7,
+        "pdvmax": 64,
+        "pdv": 64,
+        "manamax": 26,
+        "mana": 26,
+        "tournoi": false,
+        "id":"ratboss",
+        "type":"boss"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Troll Adulte",
+        "image": "Troll",
+        "solo": true,
+        "etat": "",
+        "niveau": 8,
+        "pdvmax": 164,
+        "pdv": 164,
+        "manamax": 48,
+        "mana": 48,
+        "tournoi": false,
+        "id":"troll",
+        "type":"megaboss"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Jeune Troll",
+        "image": "petittroll",
+        "solo": false,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 40,
+        "pdv": 40,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"jeunetroll"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Victor Selvus",
+        "image": "Victor Selvus",
+        "solo": true,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 26,
+        "pdv": 26,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"victorselvus"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Pain Sakeru",
+        "image": "Pain Sakeru",
+        "solo": true,
+        "etat": "Possédé",
+        "niveau": 9,
+        "pdvmax": 98,
+        "pdv": 98,
+        "manamax": 60,
+        "mana": 60,
+        "tournoi": false,
+        "id":"painsakeru",
+        "type":"boss",
+        "desc":"Le boss des Archers"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Sevrus Mirola",
+        "image": "Sevrus Mirola",
+        "solo": true,
+        "etat": "",
+        "niveau": 9,
+        "pdvmax": 82,
+        "pdv": 82,
+        "manamax": 404,
+        "mana": 404,
+        "tournoi": false,
+        "id":"sevrusmirola",
+        "type":"boss",
+        "desc":"Le boss des Magiciens"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Dragon",
+        "image": "dragon",
+        "solo": true,
+        "etat": "",
+        "niveau": 9,
+        "pdvmax": 2242,
+        "pdv": 2242,
+        "manamax": 896,
+        "mana": 896,
+        "tournoi": false,
+        "id":"dragon",
+        "type":"megaboss",
+        "desc":"Le tout dernier dragon vivant"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Akshan Lee",
+        "image": "Akshan Lee",
+        "solo": true,
+        "etat": "",
+        "niveau": 8,
+        "pdvmax": 122,
+        "pdv": 122,
+        "manamax": 48,
+        "mana": 48,
+        "tournoi": false,
+        "id":"akshanlee",
+        "type":"boss",
+        "desc":""
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Loup Sauvage",
+        "image": "loupsauvage",
+        "solo": false,
+        "etat": "",
+        "niveau": 1,
+        "pdvmax": 12,
+        "pdv": 12,
+        "manamax": 8,
+        "mana": 8,
+        "tournoi": false,
+        "id":"loup_1"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Loup Sauvage",
+        "image": "loupsauvage",
+        "solo": false,
+        "etat": "",
+        "niveau": 2,
+        "pdvmax": 18,
+        "pdv": 18,
+        "manamax": 10,
+        "mana": 10,
+        "tournoi": false,
+        "id":"loup_2"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Loup Sauvage",
+        "image": "loupsauvage",
+        "solo": false,
+        "etat": "",
+        "niveau": 3,
+        "pdvmax": 24,
+        "pdv": 24,
+        "manamax": 10,
+        "mana": 10,
+        "tournoi": false,
+        "id":"loup_3"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Loup Sauvage",
+        "image": "loupsauvage",
+        "solo": false,
+        "etat": "",
+        "niveau": 4,
+        "pdvmax": 28,
+        "pdv": 28,
+        "manamax": 12,
+        "mana": 12,
+        "tournoi": false,
+        "id":"loup_4"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Loup Sauvage",
+        "image": "loupsauvage",
+        "solo": false,
+        "etat": "",
+        "niveau": 5,
+        "pdvmax": 36,
+        "pdv": 36,
+        "manamax": 16,
+        "mana": 16,
+        "tournoi": false,
+        "id":"loup_5"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Sonia Stormwood",
+        "image": "Sonia Stormwood",
+        "solo": true,
+        "etat": "Blessée",
+        "niveau": 4,
+        "pdvmax": 26,
+        "pdv": 26,
+        "manamax": 72,
+        "mana": 72,
+        "tournoi": false,
+        "id":"soniastormwood"
+    },
+    {
+        "x": 800,
+        "y": 1,
+        "xcombat": 800,
+        "ycombat": 1,
+        "nom": "Noel Kadim",
+        "image": "Noel Kadim",
+        "solo": true,
+        "etat": "",
+        "niveau": 6,
+        "pdvmax": 42,
+        "pdv": 42,
+        "manamax": 186,
+        "mana": 186,
+        "tournoi": false,
+        "id":"noelkadim",
+        "type":"boss"
     }
 ]
